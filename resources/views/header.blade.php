@@ -1,42 +1,45 @@
 s
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Click Invitations</title>
-  <!-- General CSS Files -->
-  <link rel="stylesheet" href="{{asset('assets/css/app.min.css')}}">
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-  <link rel="stylesheet" href="{{asset('assets/css/components.css')}}">
-  <!-- Custom style CSS -->
-  <link rel="stylesheet" href="{{asset('assets/css/custom.css')}}">
-  <link rel='shortcut icon' type='image/x-icon' href="{{asset('assets/img/logoclick.png')}}" />
-  {{-- Gallery --}}
-  <link rel="stylesheet" href="{{asset('assets/bundles/chocolat/dist/css/chocolat.css')}}">
-  {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --}}
-  <link rel="stylesheet" href="{{asset('assets/bundles/datatables/datatables.min.css')}}">
-  <link rel="stylesheet" href="{{asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css')}}">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Click Invitations</title>
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+    <!-- Custom style CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel='shortcut icon' type='image/x-icon' href="{{ asset('assets/img/logoclick.png') }}" />
+    {{-- Gallery --}}
+    <link rel="stylesheet" href="{{ asset('assets/bundles/chocolat/dist/css/chocolat.css') }}">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/bundles/datatables/datatables.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
 </head>
 
-<body  style="background-color:white">
-  <div class="loader"></div>
-  <div id="app" style="background-color:white">
-    <div class="main-wrapper main-wrapper-1"  style="background-color:white">
-      <div class="navbar-bg"></div>
-      {{-- #5864bd --}}
-      <nav class="navbar navbar-expand-lg main-navbar sticky"  style="background-color:#5864bd" >
-        <div class="form-inline mr-auto"  style="background-color:#5864bd">
-          <ul class="navbar-nav mr-3"  >
-            <li><a href="#" data-toggle="sidebar"  class="nav-link nav-link-lg
-									collapse-btn"> <i data-feather="align-justify" style="color: white" ></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize" style="color: white" ></i>
-              </a>
-            </li>
-            <li class="text-center">
-              {{-- <form class="form-inline mr-auto">
+<body style="background-color:white">
+    <div class="loader"></div>
+    <div id="app" style="background-color:white">
+        <div class="main-wrapper main-wrapper-1" style="background-color:white">
+            <div class="navbar-bg"></div>
+            {{-- #5864bd --}}
+            <nav class="navbar navbar-expand-lg main-navbar sticky" style="background-color:#5864bd">
+                <div class="form-inline mr-auto" style="background-color:#5864bd">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn">
+                                <i data-feather="align-justify" style="color: white"></i></a></li>
+                        <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                                <i data-feather="maximize" style="color: white"></i>
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            {{-- <form class="form-inline mr-auto">
                 <div class="search-element">
                   <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
                   <button class="btn" type="submit">
@@ -44,11 +47,11 @@ s
                   </button>
                 </div>
               </form> --}}
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav navbar-right">
-          {{-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav navbar-right">
+                    {{-- <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
               class="nav-link nav-link-lg message-toggle"><i style="color: white"  data-feather="mail"></i>
               <span class="badge headerBadge1">
                 1 </span> </a>
@@ -98,95 +101,86 @@ s
               </div>
             </div>
           </li> --}}
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="{{asset('assets/img/userlogo.png')}}"
-                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
-            <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title">Admin</div>
-              {{-- <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+                    <li class="dropdown"><a href="#" data-toggle="dropdown"
+                            class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image"
+                                src="{{ asset('assets/img/userlogo.png') }}" class="user-img-radious-style"> <span
+                                class="d-sm-none d-lg-inline-block"></span></a>
+                        <div class="dropdown-menu dropdown-menu-right pullDown">
+                            <div class="dropdown-title">Admin</div>
+                            {{-- <a href="profile.html" class="dropdown-item has-icon"> <i class="far
 										fa-user"></i> Profile
               </a> --}}
-              {{-- <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                            {{-- <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
                 Settings
               </a> --}}
-              <div class="dropdown-divider"></div>
-              <a href="/logout" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
-                Logout
-              </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/logout" class="dropdown-item has-icon text-danger"> <i
+                                    class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2" style="background-color:white">
+                <aside id="sidebar-wrapper" style="background-color:white">
+                    <div class="sidebar-brand">
+                        <a href="/dashboard"> <img alt="" src="{{ asset('assets/img/logoclick.png') }}"
+                                class="header-logo" /> <span class="logo-name"><img
+                                    src="{{ asset('assets/img/clicklogomain.png') }}" alt=""></span>
+                        </a>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Admin Panel</li>
+                        <li class="dropdown active">
+                            <a href="/dashboard" class="nav-link"><i data-feather="monitor" style="color:#639"></i><span
+                                    style="color: black">Dashboard</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="users"
+                                    style="color:#639"></i><span style="color: black">Accounts</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="/users">Users</a></li>
+                                <li><a class="nav-link" href="/resellers">Reseller</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/coupons" class="nav-link"><i data-feather="codepen" style="color:#639"></i><span
+                                    style="color: black">Coupons</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="align-left"
+                                    style="color:#639"></i><span style="color: black">Events</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="/eventtypes">Event Types</a></li>
+                                <li><a class="nav-link" href="/userevents">User Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/records" class="nav-link"><i data-feather="bar-chart-2"
+                                    style="color:#639"></i><span style="color: black">Invoices</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/promotional" class="nav-link"><i data-feather="bar-chart-2"
+                                    style="color:#639"></i><span style="color: black">Promotional</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"
+                                    style="color:#639"></i><span style="color: black">Settings</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="/prices">Prices</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="/sticker" class="nav-link"><i data-feather="bar-chart-2"
+                                    style="color:#639"></i><span style="color: black">Stickers</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{ route('card-template-list') }}" class="nav-link"><i
+                                    data-feather="bar-chart-2" style="color:#639"></i><span
+                                    style="color: black">Templates</span></a>
+                        </li>
+                    </ul>
+
+                </aside>
             </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-sidebar sidebar-style-2" style="background-color:white">
-        <aside id="sidebar-wrapper" style="background-color:white">
-          <div class="sidebar-brand">
-            <a href="/dashboard"> <img alt="" src="{{asset('assets/img/logoclick.png')}}" class="header-logo" /> <span
-                class="logo-name"><img src="{{asset('assets/img/clicklogomain.png')}}" alt=""></span>
-            </a>
-          </div>
-          <ul class="sidebar-menu">
-            <li class="menu-header">Admin Panel</li>
-            <li class="dropdown active">
-              <a href="/dashboard" class="nav-link"><i data-feather="monitor" style="color:#639"></i><span  style="color: black">Dashboard</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="users" style="color:#639"></i><span style="color: black">Accounts</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/users">Users</a></li>
-                <li><a class="nav-link" href="/resellers">Reseller</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="/coupons" class="nav-link"><i data-feather="codepen" style="color:#639"></i><span  style="color: black">Coupons</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="align-left" style="color:#639"></i><span style="color: black">Events</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/eventtypes">Event Types</a></li>
-                <li><a class="nav-link" href="/userevents">User Events</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="/records" class="nav-link" ><i data-feather="bar-chart-2" style="color:#639"></i><span  style="color: black">Invoices</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="/promotional" class="nav-link" ><i data-feather="bar-chart-2" style="color:#639"></i><span  style="color: black">Promotional</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="settings" style="color:#639"></i><span style="color: black">Settings</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="/prices">Prices</a></li>
-              </ul>
-            </li>
-            {{-- <li><a href="#"><i
-              data-feather="clipboard"></i><span>General-Info</span></a></li>
-              <li><a href="#"><i
-                  data-feather="credit-card"></i><span>Webpages</span></a></li>
-                  <li><a href="#"><i
-                    data-feather="octagon"></i><span>Meals</span></a></li>
-                    <li><a href="#"><i
-                      data-feather="gift"></i><span>Gift Suggestions</span></a></li>
-                      <li><a href="#"><i
-                        data-feather="align-left"></i><span>Guest List</span></a></li>      
-           
-            <li><a href="#"><i
-              data-feather="grid"></i><span>Guest Table</span></a></li>
-              <li><a href="#"><i
-                    data-feather="camera"></i><span>Photos</span></a></li>
-                    <li><a href="#"><i
-                      data-feather="file"></i><span>Achknowledgments</span></a></li>
-                      <li><a href="#"><i
-                        data-feather="message-circle"></i><span>Messaging</span></a></li> --}}
-          
-              {{-- <li><img style="width:70%; margin-top:40%; margin-left:14%; height:200px" src="{{asset('assets/img/1.png')}}" alt=""></li>             --}}
-              
-               <li class="dropdown">
-              <a href="/sticker" class="nav-link" ><i data-feather="bar-chart-2" style="color:#639"></i><span  style="color: black">Stickers</span></a>
-            </li>
-          </ul>
-          
-        </aside>
-      </div>

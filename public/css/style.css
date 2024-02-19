@@ -1,0 +1,274 @@
+:root {
+    --primaryColor: #826d9b;
+    --secondaryColor: #d3d4d5;
+  }
+  
+  body {
+    background: #868484;
+  }
+  
+  h5 {
+    color: purple;
+    font-weight: bolder;
+  }
+  
+  #imgDiv {
+    height: 590px !important;
+    overflow: scroll;
+  }
+  
+  #sidebarbackgroundaddimg1 {
+    z-index: 2;
+    position: relative;
+  
+    height: 85vh;
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    float: right;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .canvas-container {
+      width: 189px !important;
+    }
+  
+    .lower-canvas {
+      width: 303px !important;
+  
+    }
+  
+    .sidebaraddtext {
+      width: 40% !important;
+    }
+  
+    #sidecustomizationtext {
+      font-size: 15px !important;
+    }
+  
+    #addText {
+      width: 79% !important;
+    }
+  
+    #buttonplus {
+      width: 11px !important;
+    }
+  
+    #buttonminus {
+      width: 11px !important;
+    }
+  
+    #colorPicker {
+      width: 100px !important;
+    }
+  
+    #webtoolsdiv {
+      display: none !important;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    #toolsbuttonid {
+      display: none;
+    }
+  
+  }
+  
+  .myCardView {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transform: translate(-50%, -90%);
+  
+  }
+  
+  .offcanvas-body {
+    font-size: 15px !important;
+    color: rgb(196, 14, 14) !important;
+    text-align: left !important;
+  }
+  
+  .sidebar {
+  
+  
+    position: relative;
+  
+    height: 85vh;
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    float: left;
+    display: none;
+  
+  }
+  
+  .sidebaraddtext {
+  
+  
+  
+    position: relative;
+  
+    height: 85vh;
+    width: 30%;
+    padding: 15px;
+    padding-bottom: 200px;
+    background-color: white;
+    float: right;
+  
+  
+  
+  }
+  
+  .sidebaraddimg {
+  
+    position: relative;
+  
+    height: 85vh;
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    float: right;
+  }
+  
+  .search {
+    width: 100%;
+    height: fit-content;
+    display: inline-block;
+  
+  }
+  
+  canvas {
+    display: inline;
+    box-shadow: 0px 0px 50px 0px #ffffff38;
+  }
+  
+  
+  #color-picker {
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(135, 19, 19);
+  }
+  
+  .topBar {
+    margin-top: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid grey;
+  
+  }
+  
+  #font-size {
+    width: 25px;
+    height: 42px;
+    background-color: transparent;
+  }
+  
+  .style_color {
+    height: 20px;
+    width: 20px;
+  
+  }
+  
+  #btn_size>button:hover {
+    background-color: none;
+  }
+  
+  #btn_size {
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid;
+    text-decoration: none;
+  }
+  
+  
+  
+  .custom-select option {
+    position: relative;
+    display: inline-block;
+  
+  }
+  
+  #font-selector {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .custom-select select option {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 200px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .custom-select .select-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 1;
+    pointer-events: none;
+  }
+  
+  
+  #searchContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  #searchButton:hover {
+    background-color: #464646;
+  }
+  
+  #stickerList {
+    margin-top: 30px;
+  }
+  
+  #stickerList>img {
+    margin: 10px;
+  }
+  
+  .sidebar {
+    overflow: scroll;
+  }
+  
+  .pdfbtncolor {
+    background-color: var(--primaryColor);
+    color: white;
+  }
+  
+  .pdfbtncolor:hover {
+    background-color: var(--secondaryColor);
+  }
+  
+  .topbtns:hover {
+    background-color: var(--primaryColor);
+  }

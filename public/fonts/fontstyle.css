@@ -1,0 +1,37 @@
+@font-face{
+    font-family: 'Abramo Serif';
+    src: url('/fonts/adaline script - regular.otf'),url("/fonts/adaline script - regular.ttf");
+ }
+ @font-face{
+    font-family: 'Roboto-BlackItalic';
+    src: url("/fonts/Roboto-BlackItalic.ttf");
+ }
+ @font-face{
+    font-family: 'DancingScript-VariableFont_wght';
+    src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+ }
+  
+ @font-face {
+    font-family: 'Eleganta_PERSONAL_USE_ONLY';
+    src: url("/fonts/Eleganta_PERSONAL_USE_ONLY.ttf");
+ }
+ @font-face {
+    font-family: 'FrankRuhlLibre-VariableFont_wght';
+    src: url("/fonts/FrankRuhlLibre-VariableFont_wght.ttf");
+ }
+ @font-face {
+    font-family: 'Zeyada-Regular';
+    src: url("/fonts/Zeyada-Regular.ttf");
+ }
+ @font-face {
+    font-family: 'RacingSansOne-Regular';
+    src:url("/fonts/RacingSansOne-Regular.ttf");
+ }
+ @font-face {
+    font-family: 'PTSansNarrow-Bold';
+    src: url("/fonts/PTSansNarrow-Bold.ttf");
+ }
+ @font-face {
+    font-family: 'HerrVonMuellerhoff-Regular';
+    src: url("/fonts/HerrVonMuellerhoff-Regular.ttf");
+ }
