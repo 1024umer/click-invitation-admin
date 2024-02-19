@@ -45,4 +45,12 @@ class CardTemplateController extends Controller
     public function getCSRFToken(){
         return csrf_token();
     }
+    public function allTemplates(){
+        $templates = Template::get();
+        if($templates->count() > 0){
+            return response($templates);
+        }else{
+            return response(['message'=>'No Template Found']);
+        }
+    }
 }

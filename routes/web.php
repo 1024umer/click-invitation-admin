@@ -39,6 +39,7 @@ Route::group(['middleware' => 'admin_auth'], function () {
 Route::get('/get-csrf-token', 'CardTemplateController@getCSRFToken');
 
 Route::get('/card-templates',"CardTemplateController@index")->name('card-template-list');
+Route::get('/card-templates/all',"CardTemplateController@allTemplates")->name('all-templates');
 Route::get('/card-templates/add',"CardTemplateController@create")->name('card-template-add');
 Route::post('/save-blob',"CardTemplateController@store")->name('card-template-store');
 Route::get('/card-templates/event/get-card', 'CardTemplateController@getCard');
