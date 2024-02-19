@@ -19,43 +19,23 @@
                                     <thead>
                                         <tr class="text-center">
                                             <th>ID</th>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Phone</th>
-                                            <th>Company</th>
-                                            <th>Province</th>
-                                            <th>Status</th>
+                                            <th>Template Name</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    {{-- <tbody>
-                                        @foreach ($userData as $value)
+                                    <tbody>
+                                        @foreach ($templates as $value)
                                             <tr class="text-center">
                                                 <td>{{ $value->id }}</td>
-                                                <td>{{ $value->name }} {{ $value->surname }}</td>
-                                                <td>{{ $value->email }}</td>
-                                                <td>{{ $value->phone }}</td>
-                                                <td>{{ $value->company }}</td>
-                                                <td>{{ $value->province }}</td>
-                                                <td>
-                                                    @if ($value->active)
-                                                        <div class="badge badge-success badge-shadow">Active</div>
-                                                    @else
-                                                        <div class="badge badge-danger badge-shadow">Deactive</div>
-                                                    @endif
-                                                </td>
+                                                <td>{{ $value->name }}</td>
                                                 <td class="d-flex justify-content-center align-items-center">
-                                                    <a href="#" onclick="getuserDatafromDB('{{ $value->id }}')"
-                                                        data-id="{{ $value->id }}" data-toggle="modal"
-                                                        data-target=".bd-example-modal-lg"
-                                                        class="btn btn-primary">Details</a>
                                                     <button type="button" data-id="{{ $value->id }}"
                                                         onclick="deleteUserfromDB('{{ $value->id }}')"
                                                         class="btn btn-danger ml-2 text-white delete">Delete</button>
                                                 </td>
                                             </tr>
                                         @endforeach
-                                    </tbody> --}}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
@@ -103,7 +83,7 @@
             '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...'
         );
         $.ajax({
-            url: "{{ route('delete-user') }}",
+            url: "{{ route('delete-template') }}",
             type: "DELETE",
             dataType: "json",
             headers: {

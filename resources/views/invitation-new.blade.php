@@ -187,6 +187,7 @@
             <img src="assets/images/image-removebg-preview.png" alt="" id="logo">
         </div>
         <div class="row justify-content-center pt-3 pb-3" style="margin-left: 10%;">
+            <div class="col-auto"><a href="{{ route('card-template-list') }}" class="btn btn-primary">Back</a></div>
             <div class="col-auto"><label for="" class="btn topbtns" onclick="sidebarbackaddimg()">+ Add
                     Card</label>
             </div>
@@ -242,6 +243,7 @@
         <img src="assets/images/image-removebg-preview.png" alt="" id="logo">
     </div>
     <div class="row justify-content-center pt-3 pb-3" style="margin-left: 10%;">
+        <div class="col-auto"><a href="{{ route('card-template-list') }}" class="btn btn-primary">Back</a></div>
         <div class="col-auto"><label for="" class="btn topbtns" onclick="sidebarbackaddimg()">+ Add Card</label>
         </div>
         <div class="col-auto">
@@ -701,7 +703,7 @@
     </div>
     <div class="col-lg-9 col-auto">
         <input type="color" id="colorPicker" oninput="changeTextColor2()">
-        
+
     </div>
     <button id="deleteBtn">Delete</button>
     <button id="undoBtn">Undo</button>

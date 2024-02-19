@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Template;
+use Illuminate\Support\Facades\DB;
 class CardTemplateController extends Controller
 {
     /**
@@ -13,8 +14,8 @@ class CardTemplateController extends Controller
      */
     public function index()
     {
-        // $templates = Template::get();
-        return view('templates');
+        $templates = Template::get();
+        return view('templates')->with(compact('templates'));
     }
 
     /**
@@ -26,7 +27,11 @@ class CardTemplateController extends Controller
     {
         return view('invitation-new');
     }
-
+    public function getCard(Request $request)
+    {
+        $stickers = DB::table('stickers')->get();
+        return ['stickers' => $stickers];
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -87,9 +92,10 @@ class CardTemplateController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $templete = Template::find($request->id)->delete();
+        return response(['status' => true]);
     }
     public function getCSRFToken(){
         return csrf_token();

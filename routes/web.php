@@ -41,7 +41,8 @@ Route::get('/get-csrf-token', 'CardTemplateController@getCSRFToken');
 Route::get('/card-templates',"CardTemplateController@index")->name('card-template-list');
 Route::get('/card-templates/add',"CardTemplateController@create")->name('card-template-add');
 Route::post('/save-blob',"CardTemplateController@store")->name('card-template-store');
-Route::get('/event/get-card/{event_id}', 'CardTemplateController@getCard');
+Route::get('/card-templates/event/get-card', 'CardTemplateController@getCard');
+Route::delete('/card-template/delete',"CardTemplateController@destroy")->name('delete-template');
 // Users Index, Add, Get, Update
 route::get('/users',"usersController@index");
 route::post('/users/added',"usersController@AddUserData");

@@ -1,3 +1,21 @@
+$(document).ready(function () {
+  $.ajax({
+    type: "GET",
+    url: "event/get-card",
+    success: function (response) {
+      if (response.stickers) {
+        console.log("Data Received:", response.stickers);
+        stickerLoad(response.stickers)
+      } else {
+        console.log("Empty Data");
+      }
+    },
+    error: function (xhr, status, error) {
+      var err = eval("(" + xhr.responseText + ")");
+      console.log(err);
+    },
+  })
+})
 var selectedText;
 var interval = null;
 var interval1 = null;
@@ -1166,24 +1184,7 @@ document.getElementById("btnSearch").addEventListener("click", (ev) => {
   <span class="visually-hidden">Loading...</span>
   </div>`;
   document.getElementById("btnSearch").innerHTML = spinner;
-  // fetch(URL)
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     var html = "<br>";
-  //     if (data.totalHits > 0) {
-  //       data.hits.forEach(function (hit, i) {
-  //         html += `<img src="${hit.previewURL}" alt="${hit.tags}" width="150px" height="150px"  style='z-index: -10'  >`;
-  //         stickers.push({ src: hit.previewURL });
-  //       });
-  //       resultsDiv.innerHTML = html;
-  //     } else {
-  //       resultsDiv.innerHTML = "No hits";
-  //     }
-  //     document.getElementById("btnSearch").innerText = `Search`;
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error fetching data:", error);
-  //   });
+
 });
 
 function stickerLoad(data) {
@@ -1213,7 +1214,6 @@ function show() {
     sideshow.style.display = "none";
   } else {
     sideshow.style.display = "inline-block";
-
   }
 }
 
@@ -1500,22 +1500,14 @@ function addStickerToCanvas1(sticker) {
 
 async function loadOldData2() {
   // Storing response
-  const response = await fetch(
-    "/event/get-card/" + window.location.pathname.split("/")[2]
-  );
 
-  // Storing data in form of JSON
+
+
   let res = await response.text();
   var data = JSON.parse(res);
-  console.log(res);
-  console.log("card data: " + data.eventType);
-  console.log(data.cardColorIn);
   document.getElementById("colorPickerenvelope_innersetting").value = data.cardColorIn;
   document.getElementById("colorPickersetting").value = data.envTitleColor;
   document.getElementById("colorPickerenvelope_outsetting").value = data.cardColorOut;
-  console.log("new ", data.cardColorIn, data.envTitleColor, data.cardColorOut);
-  // translateData();
-  //loadCardIMG(data.eventType);
   loadCardImagesFromDB(data.cardImgs);
   loadBgImagesFromDB(data.bgImgs);
 
@@ -1541,8 +1533,6 @@ async function loadOldData2() {
     });
 
     document.getElementById("msgTitle").value = data.msgTitle;
-    console.log("Ha " + data.rsvp)
-
     document.getElementById("deleteBtn").addEventListener("click", function () {
       const obj = canv.getActiveObject();
       if (obj) {
@@ -1551,67 +1541,6 @@ async function loadOldData2() {
       }
     });
 
-    // document.addEventListener("keydown", function (event) {
-    //   if (event.code === "Delete" || event.code === "Backspace") {
-    //     const obj = canv.getActiveObject();
-    //     if (obj) {
-    //       canv.remove(obj);
-    //       addToHistory();
-    //     }
-    //   }
-    // });
-
-    // document.getElementById('fontSelector').addEventListener('change', function () {
-    //   const obj = canvas.getActiveObject();
-    //   if (obj && obj.type === 'textbox') {
-    //     obj.set({ fontFamily: this.value });
-    //     canvas.renderAll();
-    //     addToHistory();
-    //   }
-    // });
-
-    // document.getElementById('textColor').addEventListener('input', function () {
-    //   const obj = canvas.getActiveObject();
-    //   if (obj && obj.type === 'textbox') {
-    //     obj.set({ fill: this.value });
-    //     canvas.renderAll();
-    //     addToHistory();
-    //   }
-    // });
-
-    // document.getElementById('fontSize').addEventListener('input', function () {
-    //   const obj = canvas.getActiveObject();
-    //   if (obj && obj.type === 'textbox') {
-    //     obj.set({ fontSize: parseInt(this.value, 10) });
-    //     canvas.renderAll();
-    //     addToHistory();
-    //   }
-    // });
-
-    // document.getElementById('saveBtn').addEventListener('click', function () {
-    //   alert('Work has been saved!');
-    // });
-
-    // document.getElementById('downloadBtn').addEventListener('click', function () {
-    //   const dataUrl = canvas.toDataURL({
-    //     format: 'png',
-    //     multiplier: 2 // Increase multiplier for higher resolution
-    //   });
-    //   const link = document.createElement('a');
-    //   link.href = dataUrl;
-    //   link.download = 'canvas_image.png';
-    //   link.click();
-    // });
-    // document.getElementById('downloadBtn2').addEventListener('click', function () {
-    //   const dataUrl = canvas.toDataURL({
-    //     format: 'png',
-    //     multiplier: 2 // Increase multiplier for higher resolution
-    //   });
-    //   const link = document.createElement('a');
-    //   link.href = dataUrl;
-    //   link.download = 'canvas_image.png';
-    //   link.click();
-    // });
     document
       .getElementById("downloadBtn3")
       .addEventListener("click", function () {
@@ -1625,7 +1554,6 @@ async function loadOldData2() {
         link.click();
       });
 
-
     canv.on("selection:created", function (options) {
       updateControls(options.target);
     });
@@ -1633,65 +1561,17 @@ async function loadOldData2() {
     canv.on("selection:updated", function (options) {
       updateControls(options.target);
     });
-
-
-    // document.getElementById("cardBG").style.background =
-    //   "url('https://clickadmin.searchmarketingservices.co/eventcards/" +
-    //   data.cardName +
-    //   "')";
-
-    console.log("custome card = " + data.customCard);
-    // if (data.customCard == 1) {
-    //   document.getElementById("card6").checked = true;
-    //   document.getElementById("card6").value = data.cardName;
-    //   document.getElementById("card6IMG").src =
-    //     "/assets/images/cardAnimation/" + data.cardName;
-    //   document.getElementById("uploadedCard").style.display = "block";
-    //   cardSelectorUpload(data.cardName);
-    //   customCard = 1;
-    //   document.getElementById("cardBG").style.background =
-    //     "url('/assets/images/cardAnimation/" + data.cardName + "')";
-    // } else {
-    //   customCard = 0;
-    //   cardSelector(data.cardName);
-    //   document.getElementById("card" + data.cardName).checked = true;
-    // }
-
-    //backgroundSelecetor(data.bgName);
     if (data.bgImgs.length > 0) {
       document.getElementById(data.bgName).checked = true;
     }
-    // document.getElementById("colorPickerenvelope_outsetting").value =
-    //   "#" + data.cardColorOut;
-    // document.getElementById("colorPickerenvelope_innersetting").value =
-    //   "#" + data.cardColorIn;
-    //cardColorChngOut();
-    //cardColorChngIn();
-
-    // let rsvpData = data.rsvp.split(",");
-
-    // rsvpData.forEach((element, key) => {
-    //   if (element == 1) {
-    //     document.getElementById("flexCheckChecked" + (key + 1)).checked = true;
-    //   } else {
-    //     document.getElementById("flexCheckChecked" + (key + 1)).checked = false;
-    //   }
-    // });
-
     document.getElementById("msgTitle").value = data.msgTitle;
   } else {
     console.log("got it here " + data.isCouple);
-    if (data.isCouple == 0) {
-      // document.getElementById("display-name1").innerHTML = "Name Here";
-      // document.getElementById("name1").value = "Name Here";
-    }
   }
 
   isCouple = data.isCouple;
   console.log("is couple" + data.isCouple);
   if (data.isCouple == 0) {
-    //document.getElementById("name2").style.display = "none";
-    //document.getElementById("name2label").style.display = "none";
   }
   console.log(data.stickers);
   stickerLoad(data.stickers);
@@ -1700,7 +1580,7 @@ async function loadOldData2() {
 function dwnPDF() {
   const dataUrl = canv.toDataURL({
     format: "png",
-    multiplier: 2, // Increase multiplier for higher resolution
+    multiplier: 2,
   });
   const link = document.createElement("a");
   link.href = dataUrl;
