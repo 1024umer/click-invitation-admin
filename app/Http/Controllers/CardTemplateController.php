@@ -41,19 +41,16 @@ class CardTemplateController extends Controller
         try{
             $template = Template::find($request->template_id);
     
-            // Decode the base64 image data
             $base64Image = $request->data_url;
             $base64Image = str_replace('data:image/png;base64,', '', $base64Image);
             $decodedImage = base64_decode($base64Image);
     
-            // Save the image to public path
             $imagePath = public_path('storage/templates/' . $template->name . '.png');
             file_put_contents($imagePath, $decodedImage);
     
-            // Update template with JSON data
             $template->update([
                 'json' => $request->json_blob,
-                'image' => $template->name.'.png',  // Assuming you want to save the image name in the 'image' column
+                'image' => $template->name.'.png',
             ]);
     
             return redirect()->route('card-template-list');
