@@ -1306,6 +1306,8 @@ save1.addEventListener("click", function () {
 });
 
 function saveData() {
+
+
   const json = JSON.stringify(canv.toJSON());
   const dddd = canv.toDataURL({
     format: "png",
@@ -1322,22 +1324,39 @@ function saveData() {
   formData.append("_token", this.token);
   formData.append("template_id", template_id)
   formData.append("data_url", dddd)
-  // Make an HTTP POST request to a Laravel route
+
   fetch("/save-blob", {
     method: "POST",
     body: formData,
   })
     .then((response) => {
       if (response.ok) {
-        console.log("Blob data saved on the server.");
-        // loadOldData2();
+        return Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: 'Template Saved Successfully',
+        });
       } else {
-        console.error("Failed to save Blob data on the server.");
+        return Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Failed to save template on the server.',
+        });
+      }
+    })
+    .then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = '/card-templates';
       }
     })
     .catch((error) => {
-      console.error("Error:", error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: error,
+      });
     });
+  
 }
 
 function saveSetting() {

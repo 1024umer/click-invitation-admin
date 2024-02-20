@@ -15,6 +15,12 @@
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400">
 <script src="https://unpkg.com/fabric@5.3.0/dist/fabric.min.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
+" rel="stylesheet">
 <style>
     .sidebaraddtext {
         overflow: scroll;
