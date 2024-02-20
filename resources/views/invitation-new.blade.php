@@ -249,6 +249,7 @@
         <div class="col-auto">
             <label for="uploadImage" class="btn topbtns">+ Add Image
                 <input type="file" style="display: none;" id="uploadImage" accept="image/*">
+                <input type="hidden" id="template_id" name="template_id" value="{{ $template->id }}">
             </label>
         </div>
         <div class="col-auto">

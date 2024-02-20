@@ -1306,21 +1306,22 @@ save1.addEventListener("click", function () {
 });
 
 function saveData() {
-  // const blob = new Blob([canv.toJSON()], { type: 'application/json' });
-  // // console.log(canv.toJSON());
-  console.log("Asdfdfdsfdsfsfdsfdsf sdfs dfdas");
-  // Create a FormData object and append the Blob data
-
   const json = JSON.stringify(canv.toJSON());
-  console.log(json);
+  const dddd = canv.toDataURL({
+    format: "png",
+    multiplier: 1,
+  });
+
+  console.log('data URL:', dddd);
   const blob = new Blob([json], { type: "application/json" });
-  console.log(blob);
 
   const formData = new FormData();
   var filename = window.location.pathname.split("/")[2] + ".json";
-
+  var template_id = document.getElementById('template_id').value
   formData.append("json_blob", [json]);
   formData.append("_token", this.token);
+  formData.append("template_id", template_id)
+  formData.append("data_url", dddd)
   // Make an HTTP POST request to a Laravel route
   fetch("/save-blob", {
     method: "POST",

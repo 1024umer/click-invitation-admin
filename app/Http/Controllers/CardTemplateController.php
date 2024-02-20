@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Template;
 use Illuminate\Support\Facades\DB;
+use Intervention\Image\Facades\Image;
 class CardTemplateController extends Controller
 {
 
@@ -23,18 +24,41 @@ class CardTemplateController extends Controller
         $stickers = DB::table('stickers')->get();
         return ['stickers' => $stickers];
     }
-
     public function store(Request $request)
     {
-        try {
-            $template = Template::create([
-                'json' => $request->json_blob,
-                'name' => $request->name ? $request->name : 'New Template',
-            ]);
 
-            return response()->json(['status' => true,'template'=>$request->json_blob]);
-        } catch (Exception $e) {
-            return response(['status' => false,'message'=>$e->getMessage()]);
+        $template = Template::create([
+            'json' => $request->json_blob,
+            'name' => $request->name ? $request->name : 'New Template',
+        ]);
+        if($template){
+            return view('invitation-new')->with(compact('template'));
+        }else{
+            return back()->with('error', 'Something went wrong!');
+        }
+    }
+    public function update(Request $request){
+        try{
+            $template = Template::find($request->template_id);
+    
+            // Decode the base64 image data
+            $base64Image = $request->data_url;
+            $base64Image = str_replace('data:image/png;base64,', '', $base64Image);
+            $decodedImage = base64_decode($base64Image);
+    
+            // Save the image to public path
+            $imagePath = public_path('storage/templates/' . $template->name . '.png');
+            file_put_contents($imagePath, $decodedImage);
+    
+            // Update template with JSON data
+            $template->update([
+                'json' => $request->json_blob,
+                'image' => $template->name.'.png',  // Assuming you want to save the image name in the 'image' column
+            ]);
+    
+            return redirect()->route('card-template-list');
+        } catch (\Exception $e){
+            return response(['status' => false, 'message' => $e->getMessage()]);
         }
     }
     public function destroy(Request $request)
