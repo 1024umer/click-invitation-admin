@@ -22,7 +22,8 @@ class CardTemplateController extends Controller
     public function getCard(Request $request)
     {
         $stickers = DB::table('stickers')->get();
-        return ['stickers' => $stickers];
+        $cards = DB::table('cards_upload')->get();
+        return ['stickers' => $stickers,'cards' =>$cards];
     }
     public function store(Request $request)
     {

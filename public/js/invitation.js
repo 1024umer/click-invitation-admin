@@ -6,6 +6,7 @@ $(document).ready(function () {
       if (response.stickers) {
         console.log("Data Received:", response.stickers);
         stickerLoad(response.stickers)
+        loadCardImagesFromDB(response.cards);
       } else {
         console.log("Empty Data");
       }
