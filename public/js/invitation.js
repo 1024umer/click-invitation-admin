@@ -1337,7 +1337,7 @@ function saveData() {
           title: 'Success',
           text: 'Template Saved Successfully',
         });
-      } else {
+      } else if (response.status === 'false') {
         return Swal.fire({
           icon: 'error',
           title: 'Error',
