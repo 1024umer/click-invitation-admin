@@ -31,6 +31,9 @@
                                                 <td>{{ $value->name }}</td>
                                                 <td class="d-flex justify-content-center align-items-center">
                                                     <button type="button" data-id="{{ $value->id }}"
+                                                        onclick="viewImage('{{ $value->id }}')"
+                                                        class="btn btn-success ml-2 text-white">Preview</button>
+                                                    <button type="button" data-id="{{ $value->id }}"
                                                         onclick="deleteUserfromDB('{{ $value->id }}')"
                                                         class="btn btn-danger ml-2 text-white delete">Delete</button>
                                                 </td>
@@ -96,11 +99,49 @@
         </div>
     </div>
 </div>
-
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" id="previewModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel" style="color:black ">Template Preview</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img id="templateImg" alt="">
+                <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 @include('footer')
 
 <script>
+    function viewImage(id) {
+        var userId = id
+        $.ajax({
+            url: "{{ route('view-template') }}",
+            type: 'GET',
+            dataType: "json",
+            headers: {
+                "X-CSRF-TOKEN": "{{ csrf_token() }}"
+            },
+            data: {
+                id: userId,
+            },
+            success: function(data) {
+                $("#templateImg").attr("src", data.image_url);
+                $("#previewModal").modal("show");
+            },
+            error: function(data) {
+                console.log(data);
+            }
+        })
+    }
+
     function deleteUserfromDB(id) {
         $('#delete_id').val(id);
         $('#deleteModal').modal('show');

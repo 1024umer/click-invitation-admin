@@ -45,6 +45,7 @@ Route::post('/card-templates/store',"CardTemplateController@store")->name('card-
 Route::post('/save-blob',"CardTemplateController@update")->name('card-template-update');
 Route::get('/card-templates/event/get-card', 'CardTemplateController@getCard');
 Route::delete('/card-template/delete',"CardTemplateController@destroy")->name('delete-template');
+Route::get('/card-templates/view',"CardTemplateController@viewTemplate")->name('view-template');
 // Users Index, Add, Get, Update
 route::get('/users',"usersController@index");
 route::post('/users/added',"usersController@AddUserData");

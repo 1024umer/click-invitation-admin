@@ -74,4 +74,13 @@ class CardTemplateController extends Controller
             return response(['message'=>'No Template Found']);
         }
     }
+    public function viewTemplate(Request $request){
+        $template = Template::find($request->id);
+        if($template){
+            return response()->json(['image_url' => asset('storage/templates/'.$template->image)]);
+        } else {
+            return response()->json(['message' => 'No Template Found']);
+        }
+    }
+    
 }
