@@ -10,6 +10,114 @@
     // }
 </script>
 <link rel="stylesheet" href="{{ url('css/fontstyle.css') }}">
+<link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Playball&family=Rammetto+One&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playball&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playball&family=Rammetto+One&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Lato:wght@400&family=Merriweather:wght@400&family=Montserrat:wght@400&family=Roboto+Condensed:wght@400&family=Source+Sans+Pro:wght@400&family=Open+Sans:wght@400&family=Ubuntu:wght@400&family=Nunito:wght@400&family=Crimson+Text:wght@400&family=Playfair+Display:wght@400&family=Exo+2:wght@400&family=Noto+Sans:wght@400&family=Dosis:wght@400&family=Fjalla+One:wght@400&family=PT+Serif:wght@400&family=Muli:wght@400&family=Cabin:wght@400">
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+    
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Playball&family=Rammetto+One&family=Rock+Salt&display=swap"
+    as="style" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playball&family=Rock+Salt&display=swap" as="style"
+    crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playball&family=Rammetto+One&family=Rock+Salt&display=swap"
+    as="style" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Lato:wght@400&family=Merriweather:wght@400&family=Montserrat:wght@400&family=Roboto+Condensed:wght@400&family=Source+Sans+Pro:wght@400&family=Open+Sans:wght@400&family=Ubuntu:wght@400&family=Nunito:wght@400&family=Crimson+Text:wght@400&family=Playfair+Display:wght@400&family=Exo+2:wght@400&family=Noto+Sans:wght@400&family=Dosis:wght@400&family=Fjalla+One:wght@400&family=PT+Serif:wght@400&family=Muli:wght@400&family=Cabin:wght@400"
+    as="style" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Anta&display=swap" as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    as="style" crossorigin>
+<link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Anta&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    as="style" crossorigin>
+
+
+<link rel="preload" href="/fonts/calig___.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/BLOODY.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/evilof__.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Landliebe.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/GREENFUZ.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Headhunter-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/victoria.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/HenryMorganHand.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/romeo.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/XTRAFLEX.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/DancingScript-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/MountainsofChristmas.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Kingthings_Foundation.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Royalacid_o.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Royalacid.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/OrotundCaps.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/qurve.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/dephun2.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/mysteron.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/LETSEAT.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/energydimension.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/Popups.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="/fonts/dipedthick.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400">
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&family=Lato:wght@400&family=Merriweather:wght@400&family=Montserrat:wght@400&family=Roboto+Condensed:wght@400&family=Source+Sans+Pro:wght@400&family=Open+Sans:wght@400&family=Ubuntu:wght@400&family=Nunito:wght@400&family=Crimson+Text:wght@400&family=Playfair+Display:wght@400&family=Exo+2:wght@400&family=Noto+Sans:wght@400&family=Dosis:wght@400&family=Fjalla+One:wght@400&family=PT+Serif:wght@400&family=Muli:wght@400&family=Cabin:wght@400">
 <link rel="stylesheet" href="{{ url('css/style.css') }}">
@@ -22,6 +130,122 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js
 https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
 " rel="stylesheet">
 <style>
+
+@font-face {
+        font-family: 'Calig';
+        src: url('/fonts/calig___.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'BLOODY';
+        src: url('/fonts/BLOODY.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Evilof';
+        src: url('/fonts/evilof__.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Landliebe';
+        src: url('/fonts/Landliebe.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'GREENFUZ';
+        src: url('/fonts/GREENFUZ.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Headhunter-Regular';
+        src: url('/fonts/Headhunter-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'victoria';
+        src: url('/fonts/victoria.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'HenryMorganHand';
+        src: url('/fonts/HenryMorganHand.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'romeo';
+        src: url('/fonts/romeo.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'XTRAFLEX';
+        src: url('/fonts/XTRAFLEX.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'DancingScript-Regular';
+        src: url('/fonts/DancingScript-Regular.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'MountainsofChristmas';
+        src: url('/fonts/MountainsofChristmas.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Kingthings_Foundation';
+        src: url('/fonts/Kingthings_Foundation.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Royalacid_o';
+        src: url('/fonts/Royalacid_o.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Royalacid';
+        src: url('/fonts/Royalacid.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'OrotundCaps';
+        src: url('/fonts/OrotundCaps.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'qurve';
+        src: url('/fonts/qurve.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'dephun2';
+        src: url('/fonts/dephun2.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'mysteron';
+        src: url('/fonts/mysteron.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'LETSEAT';
+        src: url('/fonts/LETSEAT.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'energydimension';
+        src: url('/fonts/energydimension.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Popups';
+        src: url('/fonts/Popups.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'dipedthick';
+        src: url('/fonts/dipedthick.ttf') format('truetype');
+    }
+    
     .sidebaraddtext {
         overflow: scroll;
     }
@@ -631,25 +855,70 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                 <div class="select-wrapper">
                     <span id="font" style="font-family:'Abramo Serif';"></span>
                     <select id="font-selector2" class="fontSelector1">
-                        <option value="Arial" style="font-family: Arial;">Arial</option>
-                        <option value="cursive" style="font-family: 'Brush Script MT';">Brush Script MT</option>
-                        <option value="Consolas, monospace" style="font-family: 'Consolas', monospace;">
-                            Consolas Monospace</option>
+                        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif">Arial</option>
+                        <option value="Anta, sans-serif" style="font-family: Anta;">Anta</option>
+                        <option value="calig, Arial, sans-serif" style="font-family: 'calig', Arial, sans-serif;">calig
+                        </option>
+                        <option value="BLOODY, sans-serif" style="font-family: 'BLOODY', sans-serif;">BLOODY</option>
+                        <option value="Evilof, sans-serif" style="font-family: 'Evilof', sans-serif;">Evilof</option>
+                        <option value="Landliebe, sans-serif" style="font-family: 'Landliebe', sans-serif;">Landliebe
+                        </option>
+                        <option value="GREENFUZ, sans-serif" style="font-family: 'GREENFUZ', sans-serif;">GREENFUZ
+                        </option>
+                        <option value="Headhunter-Regular, sans-serif"
+                            style="font-family: 'Headhunter-Regular', sans-serif;">Headhunter Regular</option>
+                        <option value="victoria, sans-serif" style="font-family: 'victoria', sans-serif;">victoria
+                        </option>
+                        <option value="Rock Salt, cursive" style="font-family: 'Rock Salt', cursive;">Rock Salt</option>
+                        <option value="playball, cursive" style="font-family: 'Playball', cursive;">Playball</option>
+                        <option value="Rammetto One, sans-serif" style="font-family: 'Rammetto One', sans-serif;">
+                            Playball</option>
+                        <option value="Bungee Shade, sans-serif" style="font-family: 'Bungee Shade', sans-serif;">Bungee
+                            Shade</option>
+                        <option value="HenryMorganHand, sans-serif" style="font-family: 'HenryMorganHand', sans-serif;">
+                            Henry MorganHand</option>
+                        <option value="romeo, sans-serif" style="font-family: 'romeo', sans-serif;">Romeo</option>
+                        <option value="XTRAFLEX, sans-serif" style="font-family: 'XTRAFLEX', sans-serif;">XTRAFLEX
+                        </option>
+                        <option value="DancingScript-Regular, sans-serif"
+                            style="font-family: 'DancingScript-Regular', sans-serif;">DancingScript Regular</option>
+                        <option value="MountainsofChristmas, sans-serif"
+                            style="font-family: 'MountainsofChristmas', sans-serif;">Mountains of Christmas</option>
+                        <option value="Kingthings_Foundation, sans-serif"
+                            style="font-family: 'Kingthings_Foundation', sans-serif;">Kingthings_Foundation</option>
+                        <option value="Royalacid_o, sans-serif" style="font-family: 'Royalacid_o', sans-serif;">
+                            Royalacid_o</option>
+                        <option value="Royalacid, sans-serif" style="font-family: 'Royalacid', sans-serif;">Royalacid
+                        </option>
+                        <option value="OrotundCaps, sans-serif" style="font-family: 'OrotundCaps', sans-serif;">
+                            OrotundCaps</option>
+                        <option value="qurve, sans-serif" style="font-family: 'qurve', sans-serif;">qurve</option>
+                        <option value="dephun2, sans-serif" style="font-family: 'dephun2', sans-serif;">dephun2</option>
+                        <option value="mysteron, sans-serif" style="font-family: 'mysteron', sans-serif;">mysteron
+                        </option>
+                        <option value="LETSEAT, sans-serif" style="font-family: 'LETSEAT', sans-serif;">LETSEAT</option>
+                        <option value="energydimension, sans-serif" style="font-family: 'energydimension', sans-serif;">
+                            Energy Dimension</option>
+                        <option value="Popups, sans-serif" style="font-family: 'Popups', sans-serif;">Popups</option>
+                        <option value="dipedthick, sans-serif" style="font-family: 'dipedthick', sans-serif;">dipedthick
+                        </option>
 
-                        <option value="Raleway" style="font-family: 'Raleway';">Raleway</option>
-                        <option value="Lato" style="font-family: 'Lato';">Lato</option>
-                        <option value="Merriweather" style="font-family: 'Merriweather';">Merriweather</option>
-                        <option value="Montserrat" style="font-family: 'Montserrat';">Montserrat</option>
-                        <option value="Roboto Condensed" style="font-family: 'Roboto Condensed';">Roboto Condensed
+                        <option value="EB Garamond, serif" style="font-family: EB Garamond, serif">EB Garamond</option>
+                        <option value="Courier New, monospace" style="font-family: Courier New, monospace">Courier New
                         </option>
-                        <option value="Source Sans Pro" style="font-family: 'Source Sans Pro';">Source Sans Pro
+                        <option value="Lobster, sans-serif" style="font-family: Lobster;">Lobster</option>
+                        <option value="Lucida Console, monospace" style="font-family: Lucida Console, monospace">Lucida
+                            Console</option>
+                        <option value="Montserrat, sans-serif" style="font-family: Montserrat, sans-serif">Montserrat
                         </option>
-                        <option value="Nunito" style="font-family: 'Nunito';">Nunito</option>
-                        <option value="Courier New" style="font-family: 'Courier New';">Courier New</option>
-                        <option value="Georgia" style="font-family: Georgia;">Georgia</option>
-                        <option value="Quicksand" style="font-family: Quicksand;">Quicksand</option>
-                        <option value="Times New Roman" style="font-family: 'Times New Roman';">Times New Roman
+                        <option value="Pacifico, cursive" style="font-family: Pacifico, cursive">Pacifico</option>
+                        <option value="PT Sans, sans-serif" style="font-family: PT Sans, sans-serif">PT Sans</option>
+                        <option value="Quicksand, sans-serif" style="font-family: Quicksand, sans-serif">Quicksand
                         </option>
+                        <option value="Roboto, sans-serif" style="font-family: Roboto, sans-serif">Roboto</option>
+                        <option value="Source Code Pro, monospace" style="font-family: Source Code Pro, monospace">
+                            Source Code Pro</option>
+                        <option value="Ubuntu, sans-serif" style="font-family: Ubuntu, sans-serif">Ubuntu</option>
                     </select>
                 </div>
             </div>
