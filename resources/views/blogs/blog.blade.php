@@ -4,7 +4,7 @@
     <form action="{{ isset($blog) ? route('blog.update', $blog->id) : route('blog.store') }}" method="POST"
         enctype="multipart/form-data">
         {{ csrf_field() }}
-        <h2>Blogs Create</h2>
+        <h2>Blogs {{ isset($blog) ? 'Update' : 'Create' }}</h2>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
