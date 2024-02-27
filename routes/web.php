@@ -22,12 +22,12 @@ Route::get('/dashboard',"dashboardController@index");
 Route::get('/graphreport',"graphreportController@index");
 
 // Blogs
-Route::get('/blogs',"BlogController@index")->name('blog-list');
-// Route::get('/blogs/add',"BlogController@create")->name('blog-add');
-// Route::post('/blogs/store',"BlogController@store")->name('blog-store');
-// Route::get('/blogs/edit/{blogID}',"BlogController@edit")->name('blog-edit');
-// Route::post('/blogs/update',"BlogController@update")->name('blog-update');
-// Route::get('/blogs/delete/{blogID}',"BlogController@destroy")->name('blog-delete');
+Route::get('/blogs',"BlogController@index")->name('blog.list');
+Route::get('/blogs/create',"BlogController@create")->name('blog.create');
+Route::post('/blogs/store',"BlogController@store")->name('blog.store');
+Route::get('/blogs/edit/{id}',"BlogController@edit")->name('blog.edit');
+Route::post('/blogs/update',"BlogController@update")->name('blog.update');
+Route::delete('/blogs/delete',"BlogController@destroy")->name('blog.delete');
 
 
 

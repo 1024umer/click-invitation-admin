@@ -21,6 +21,11 @@ s
     <link rel="stylesheet"
         href="{{ asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
 </head>
+<style>
+    .for-error {
+        color: red;
+    }
+</style>
 
 <body style="background-color:white">
     <div class="loader"></div>
@@ -182,10 +187,9 @@ s
                         </li>
 
                         <li class="dropdown">
-                          <a href="{{ route('blog-list') }}" class="nav-link"><i
-                                  data-feather="bar-chart-2" style="color:#639"></i><span
-                                  style="color: black">Blogs</span></a>
-                      </li>
+                            <a href="{{ route('blog.list') }}" class="nav-link"><i data-feather="bar-chart-2"
+                                    style="color:#639"></i><span style="color: black">Blogs</span></a>
+                        </li>
                     </ul>
 
                 </aside>
