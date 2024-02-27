@@ -21,6 +21,14 @@ use App\Http\Controllers\accountsettingsController;
 Route::get('/dashboard',"dashboardController@index");
 Route::get('/graphreport',"graphreportController@index");
 
+// Blogs
+Route::get('/blogs',"BlogController@index")->name('blog-list');
+// Route::get('/blogs/add',"BlogController@create")->name('blog-add');
+// Route::post('/blogs/store',"BlogController@store")->name('blog-store');
+// Route::get('/blogs/edit/{blogID}',"BlogController@edit")->name('blog-edit');
+// Route::post('/blogs/update',"BlogController@update")->name('blog-update');
+// Route::get('/blogs/delete/{blogID}',"BlogController@destroy")->name('blog-delete');
+
 
 
 // Login

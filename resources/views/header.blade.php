@@ -180,6 +180,12 @@ s
                                     data-feather="bar-chart-2" style="color:#639"></i><span
                                     style="color: black">Templates</span></a>
                         </li>
+
+                        <li class="dropdown">
+                          <a href="{{ route('blog-list') }}" class="nav-link"><i
+                                  data-feather="bar-chart-2" style="color:#639"></i><span
+                                  style="color: black">Blogs</span></a>
+                      </li>
                     </ul>
 
                 </aside>
