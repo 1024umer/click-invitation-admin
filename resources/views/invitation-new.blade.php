@@ -632,7 +632,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                 <div class="select-wrapper">
                     <span id="font" style="font-family:'Abramo Serif';"></span>
                     <select id="font-selector2" class="fontSelector1">
-                        <option value="Arial, sans-serif" style="font-family: Arial, sans-serif">Arial</option>
+                        <option value="arial" style="font-family: arial">Arial</option>
                         <option value="Cinzel, serif" style="font-family: 'Cinzel', serif">Cinzel</option>
                         <option value="Sackers, sans-serif" style="font-family: 'Sackers', sans-serif">Sackers Gothic</option>
                         <option value="Rama, sans-serif" style="font-family: 'Rama', sans-serif">Rama Gothic</option>
@@ -641,6 +641,25 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="calig, Arial, sans-serif" style="font-family: 'calig', Arial, sans-serif;">calig
                         </option>
                         <option value="BLOODY, sans-serif" style="font-family: 'BLOODY', sans-serif;">BLOODY</option>
+
+                        <option value="jandacelebrationscript, sans-serif" style="font-family: 'jandacelebrationscript', sans-serif;">Janda Celebration Script</option>
+                        <option value="anydore, sans-serif" style="font-family: 'anydore', sans-serif;">Anydore</option>
+                        <option value="creattiondemo, sans-serif" style="font-family: 'creattiondemo', sans-serif;">Creattion Demo</option>
+                        <option value="candy, sans-serif" style="font-family: 'candy', sans-serif;">Candy</option>
+                        <option value="weddingBells, sans-serif" style="font-family: 'weddingBells', sans-serif;">Wedding bells</option>
+                        <option value="Blacksword, sans-serif" style="font-family: 'Blacksword', sans-serif;">Blacksword</option>
+                        <option value="GabyDemo, sans-serif" style="font-family: 'GabyDemo', sans-serif;">Gaby Demo</option>
+                        <option value="arbuckle-fat, sans-serif" style="font-family: 'arbuckle-fat', sans-serif;">Arbuckle Fat</option>
+                        <option value="drSugiyamaRegular, sans-serif" style="font-family: 'drSugiyamaRegular', sans-serif;">Dr Sugiyama Regular</option>
+                        <option value="CasablancaNoirPersonalUse, sans-serif" style="font-family: 'CasablancaNoirPersonalUse', sans-serif;">Casablanca Noir Personal Use</option>
+                        <option value="RegistaItalic, sans-serif" style="font-family: 'RegistaItalic', sans-serif;">Regista Italic</option>
+                        <option value="CoalhandLueTRIAL, sans-serif" style="font-family: 'CoalhandLueTRIAL', sans-serif;">Coalhand Lue</option>
+                        <option value="MagentaRose, sans-serif" style="font-family: 'MagentaRose', sans-serif;">Magenta Rose</option>
+                        <option value="Vonique92_D, sans-serif" style="font-family: 'Vonique92_D', sans-serif;">Vonique92_D</option>
+                        <option value="VanityBoldNarrow, sans-serif" style="font-family: 'VanityBoldNarrow', sans-serif;">VanityBoldNarrow</option>
+                        <option value="KugileDemo, sans-serif" style="font-family: 'KugileDemo', sans-serif;">KugileDemo</option>
+                        <option value="Atheniademo, sans-serif" style="font-family: 'Atheniademo', sans-serif;">Atheniademo</option>
+                        
                         <option value="Evilof, sans-serif" style="font-family: 'Evilof', sans-serif;">Evilof</option>
                         <option value="Landliebe, sans-serif" style="font-family: 'Landliebe', sans-serif;">Landliebe
                         </option>
@@ -680,7 +699,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="LETSEAT, sans-serif" style="font-family: 'LETSEAT', sans-serif;">LETSEAT</option>
                         <option value="energydimension, sans-serif" style="font-family: 'energydimension', sans-serif;">
                             Energy Dimension</option>
-                        <option value="Popups, sans-serif" style="font-family: 'Popups', sans-serif;">Popups</option>
+                        <!-- <option value="Popups, sans-serif" style="font-family: 'Popups', sans-serif;">Popups</option> -->
                         <option value="dipedthick, sans-serif" style="font-family: 'dipedthick', sans-serif;">dipedthick
                         </option>
 
