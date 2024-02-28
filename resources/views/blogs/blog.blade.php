@@ -54,7 +54,18 @@
             <input class="form-control" name="meta_tag" required value="{{ isset($blog) ? $blog->meta_tag : '' }}">
             <small>Please write complete meta tag</small>
         </div>
-
+        <div class="form-group">
+            <label> Is Trending?</label>
+            <input type="checkbox" name="is_trending" {{isset($blog)&& $blog->is_trending == 1?'checked':''}} id="">
+        </div>
+        <div class="form-group">
+            <label> Is Popular?</label>
+            <input type="checkbox" name="is_popular" {{isset($blog)&& $blog->is_popular == 1?'checked':''}}id="">
+        </div>
+        <div class="form-group">
+            <label> Is Latest?</label>
+            <input type="checkbox" name="is_latest" {{isset($blog)&& $blog->is_latest == 1?'checked':''}} id="">
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </section>

@@ -32,6 +32,9 @@ class BlogController extends Controller
             'slug' => $request->slug,
             'page_title' => $request->page_title,
             'meta_tag' => $request->meta_tag,
+            'is_trending'=>$request->is_trending?1:0,
+            'is_popular'=>$request->is_popular?1:0,
+            'is_latest'=>$request->is_latest?1:0,
         ]);
         if($blog){
             return redirect()->route('blog.list');
@@ -54,6 +57,9 @@ class BlogController extends Controller
                     'slug' => $request->slug,
                     'page_title' => $request->page_title,
                     'meta_tag' => $request->meta_tag,
+                    'is_trending'=>$request->is_trending?1:0,
+                    'is_popular'=>$request->is_popular?1:0,
+                    'is_latest'=>$request->is_latest?1:0,
                 ]);
                 $blog->refresh();
         } else {
@@ -64,6 +70,9 @@ class BlogController extends Controller
                 'slug' => $request->slug,
                 'page_title' => $request->page_title,
                 'meta_tag' => $request->meta_tag,
+                'is_trending'=>$request->is_trending?1:0,
+                'is_popular'=>$request->is_popular?1:0,
+                'is_latest'=>$request->is_latest?1:0,
             ]);
             $blog->refresh();
         }
