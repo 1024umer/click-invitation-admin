@@ -1,7 +1,7 @@
 @include('header');
 
 <section class="container my-5">
-    <form action="{{ isset($blog) ? route('blog.update', $blog->id) : route('blog.store') }}" method="POST"
+    <form action="{{ isset($blog) ? route('blog.update', $blog->slug) : route('blog.store') }}" method="POST"
         enctype="multipart/form-data">
         {{ csrf_field() }}
         <h2>Blogs {{ isset($blog) ? 'Update' : 'Create' }}</h2>
@@ -35,7 +35,7 @@
 
         <div class="form-group">
             <label for="image">Image:</label>
-            <input type="file" class="form-control-file" id="image" name="image" accept="image/*" required>
+            <input type="file" class="form-control-file" id="image" name="image" accept="image/*"  {{ isset($blog) ? '' : 'required' }}>
         </div>
         @if (isset($blog))
             <div class="my-3">
@@ -67,12 +67,7 @@
             removePlugins: ['EasyImage', 'ImageUpload'],
             shouldNotGroupWhenFull: true,
         })
-        .then(editor => {
-            console.log(editor);
-        })
-        .catch(error => {
-            console.error(error);
-        });
+      
 
     $(document).ready(function() {
         function slugify(text) {

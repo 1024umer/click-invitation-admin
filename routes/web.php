@@ -26,8 +26,9 @@ Route::get('/blogs',"BlogController@index")->name('blog.list');
 Route::get('/blogs/create',"BlogController@create")->name('blog.create');
 Route::post('/blogs/store',"BlogController@store")->name('blog.store');
 Route::get('/blogs/edit/{id}',"BlogController@edit")->name('blog.edit');
-Route::post('/blogs/update',"BlogController@update")->name('blog.update');
+Route::post('/blogs/update/{id}',"BlogController@update")->name('blog.update');
 Route::delete('/blogs/delete',"BlogController@destroy")->name('blog.delete');
+Route::get('/blogs/show/{id}',"BlogController@show")->name('blog.show');
 
 
 

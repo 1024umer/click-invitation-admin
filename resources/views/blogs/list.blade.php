@@ -8,7 +8,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Users</h4>
+                            <h4>Users</h4>                          
                             <a type="button" class="btn btn-primary ml-auto" href="{{ route('blog.create') }}">
                                 <i data-feather="plus"></i>Add
                             </a>
@@ -37,13 +37,16 @@
                                                 <td>{{ $value->page_title }}</td>
                                                 <td>{{ $value->meta_tag }}</td>
                                                 <td class="d-flex justify-content-center align-items-center">
-                                                    <a href="#" onclick="getuserDatafromDB('{{ $value->id }}')"
+                                                    {{-- <a href="#" onclick="getuserDatafromDB('{{ $value->id }}')"
                                                         data-id="{{ $value->id }}" data-toggle="modal"
                                                         data-target=".bd-example-modal-lg"
-                                                        class="btn btn-primary">Details</a>
+                                                        class="btn btn-primary">Details</a> --}}
+                                                           <a href="{{ route('blog.show', $value->slug) }}"class="btn btn-primary ml-2"  target="_blank">Details</a>
                                                     <button type="button" data-id="{{ $value->id }}"
                                                         onclick="deleteUserfromDB('{{ $value->id }}')"
                                                         class="btn btn-danger ml-2 text-white delete">Delete</button>
+                                                        <a href="{{ route('blog.edit', $value->slug) }}" class="btn btn-secondary ml-2" target="_blank">Edit</a>
+
                                                 </td>
                                             </tr>
                                         @endforeach

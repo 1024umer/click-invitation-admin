@@ -16,9 +16,9 @@ class BlogController extends Controller
     {
         return view('blogs.blog');
     }
-    public function edit($id)
+    public function edit($slug)
     {
-        $blog = Blog::find($id);
+        $blog = Blog::where('slug', $slug)->first();
         return view('blogs.blog')->with(compact('blog'));
     }
     public function store(BlogRequest $request){
@@ -39,32 +39,73 @@ class BlogController extends Controller
             return redirect()->back()->withErrors(['error' => 'Something went wrong!']);
         }
     }
-    public function update(BlogRequest $request,$id){
-        // dd($request->all());
-        if($request->file('image')){
-            $imagePath = $request->file('image')->store('blogs', 'public');
-        }
-        $blog = Blog::find($id);
+    // public function update($slug,Request $request){
+    //     // dd($request->all());
+    //     if($request->file('image')){
+    //         $imagePath = $request->file('image')->store('blogs', 'public');
+    //     }
+    //     $blog = Blog::where('slug', $slug)->first();
 
-        $blog->update([
-            'title' => $request->title,
-            'short_description' => $request->short_description,
-            'long_description' => $request->long_description,
-            'image' => $imagePath,
-            'slug' => $request->slug,
-            'page_title' => $request->page_title,
-            'meta_tag' => $request->meta_tag,
-        ]);
-        $blog->refresh();
+    //     $blog->update([
+    //         'title' => $request->title,
+    //         'short_description' => $request->short_description,
+    //         'long_description' => $request->long_description,
+    //         'image' => $imagePath,
+    //         'slug' => $request->slug,
+    //         'page_title' => $request->page_title,
+    //         'meta_tag' => $request->meta_tag,
+    //     ]);
+    //     $blog->refresh();
+    //     if($blog){
+    //         return redirect()->route('blog.list');
+    //     }else{
+    //         return redirect()->back()->withErrors(['error' => 'Something went wrong!']);
+    //     }
+    // }
+
+    public function update($slug, Request $request)
+    {
+        $blog = Blog::where('slug', $slug)->first();
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('blogs', 'public');
+                $blog->update([
+                    'title' => $request->title,
+                    'short_description' => $request->short_description,
+                    'long_description' => $request->long_description,
+                    'image'=> $imagePath,
+                    'slug' => $request->slug,
+                    'page_title' => $request->page_title,
+                    'meta_tag' => $request->meta_tag,
+                ]);
+                $blog->refresh();
+        } else {
+            $blog->update([
+                'title' => $request->title,
+                'short_description' => $request->short_description,
+                'long_description' => $request->long_description,
+                'slug' => $request->slug,
+                'page_title' => $request->page_title,
+                'meta_tag' => $request->meta_tag,
+            ]);
+            $blog->refresh();
+        }
         if($blog){
-            return redirect()->route('blog.list');
+            return redirect()->route('blog.list')->with('success', 'Blog post updated successfully.');
         }else{
             return redirect()->back()->withErrors(['error' => 'Something went wrong!']);
         }
     }
+    
     public function destroy(Request $request){
         $id = $request->id;
         $blog = Blog::find($id)->delete();
         return response()->json(null,200);
+    }
+
+    public function show($slug)
+    {
+        $blog = Blog::where('slug', $slug)->first();
+        return view('blogs.show')->with(compact('blog'));
     }
 }

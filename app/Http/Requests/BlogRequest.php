@@ -25,10 +25,10 @@ class BlogRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:255',
-            'short_description' => 'required|string|max:550',
+            'short_description' => 'required|string',
             'long_description' => 'required|string',
             'image' =>'required|mimes:jpeg,png,jpg|max:2048',
-            'slug' => 'required|string|unique:blogs,slug',
+            'slug' => 'required|string|unique:blogs,slug'.($this->id>0?$this->id:''),
         ];
     }
 }
