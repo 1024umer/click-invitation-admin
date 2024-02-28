@@ -39,29 +39,6 @@ class BlogController extends Controller
             return redirect()->back()->withErrors(['error' => 'Something went wrong!']);
         }
     }
-    // public function update($slug,Request $request){
-    //     // dd($request->all());
-    //     if($request->file('image')){
-    //         $imagePath = $request->file('image')->store('blogs', 'public');
-    //     }
-    //     $blog = Blog::where('slug', $slug)->first();
-
-    //     $blog->update([
-    //         'title' => $request->title,
-    //         'short_description' => $request->short_description,
-    //         'long_description' => $request->long_description,
-    //         'image' => $imagePath,
-    //         'slug' => $request->slug,
-    //         'page_title' => $request->page_title,
-    //         'meta_tag' => $request->meta_tag,
-    //     ]);
-    //     $blog->refresh();
-    //     if($blog){
-    //         return redirect()->route('blog.list');
-    //     }else{
-    //         return redirect()->back()->withErrors(['error' => 'Something went wrong!']);
-    //     }
-    // }
 
     public function update($slug, Request $request)
     {
