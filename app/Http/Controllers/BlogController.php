@@ -30,7 +30,7 @@ class BlogController extends Controller
         }else{
             $imagePath = null;
         }
-                $blog = Blog::create([
+        $blog = Blog::create([
             'title' => $request->title,
             'short_description' => $request->short_description,
             'long_description' => $request->long_description,
