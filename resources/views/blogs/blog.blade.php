@@ -5,18 +5,25 @@
         enctype="multipart/form-data">
         {{ csrf_field() }}
         <h2>Blogs {{ isset($blog) ? 'Update' : 'Create' }}</h2>
+        {{-- @if (session('error'))
+            <div class="alert alert-success alert-dismissible fade show" id="success_alert_home"role="alert">
+                {{ session('error') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif --}}
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="title">Title:</label>
-                    <input type="text" class="form-control" id="title" name="title"
-                        value="{{ isset($blog) ? $blog->title : '' }}" required>
+                    <input type="text" class="form-control" id="title"
+                        name="title" value="{{ old('title', isset($blog) ? $blog->title : '') }}" >
                 </div>
+
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="slug">Slug:</label>
-                    <input type="text" class="form-control" id="slug" name="slug" readonly
+                    <input type="text" class="form-control" id="slug" name="slug"
                         value="{{ isset($blog) ? $blog->slug : '' }}">
                     <small>Slug will be generated automatically.</small>
                 </div>
@@ -51,20 +58,22 @@
 
         <div class="form-group">
             <label>Meta Tag</label>
-            <input class="form-control" name="meta_tag" required value="{{ isset($blog) ? $blog->meta_tag : '' }}">
+            <input class="form-control" name="meta_tag" value="{{ isset($blog) ? $blog->meta_tag : '' }}">
             <small>Please write complete meta tag</small>
         </div>
         <div class="form-group">
             <label> Is Trending?</label>
-            <input type="checkbox" name="is_trending" {{isset($blog)&& $blog->is_trending == 1?'checked':''}} id="">
+            <input type="checkbox" name="is_trending" {{ isset($blog) && $blog->is_trending == 1 ? 'checked' : '' }}
+                id="">
         </div>
         <div class="form-group">
             <label> Is Popular?</label>
-            <input type="checkbox" name="is_popular" {{isset($blog)&& $blog->is_popular == 1?'checked':''}}id="">
+            <input type="checkbox" name="is_popular" {{ isset($blog) && $blog->is_popular == 1 ? 'checked' : '' }}id="">
         </div>
         <div class="form-group">
             <label> Is Latest?</label>
-            <input type="checkbox" name="is_latest" {{isset($blog)&& $blog->is_latest == 1?'checked':''}} id="">
+            <input type="checkbox" name="is_latest" {{ isset($blog) && $blog->is_latest == 1 ? 'checked' : '' }}
+                id="">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -78,7 +87,7 @@
             removePlugins: ['EasyImage', 'ImageUpload'],
             shouldNotGroupWhenFull: true,
         })
-      
+
 
     $(document).ready(function() {
         function slugify(text) {

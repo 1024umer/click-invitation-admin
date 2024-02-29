@@ -25,8 +25,12 @@ class BlogController extends Controller
     public function store(BlogRequest $request)
     {
         // dd($request->all());
-        $imagePath = $request->file('image')->store('blogs', 'public');
-        $blog = Blog::create([
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('blogs', 'public');
+        }else{
+            $imagePath = null;
+        }
+                $blog = Blog::create([
             'title' => $request->title,
             'short_description' => $request->short_description,
             'long_description' => $request->long_description,
