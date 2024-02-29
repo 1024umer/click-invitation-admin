@@ -57,7 +57,7 @@
         </div>
 
         <div class="form-group">
-            <label>Meta Tag</label>
+            <label>Meta Description</label>
             <input class="form-control" name="meta_tag" value="{{ isset($blog) ? $blog->meta_tag : '' }}">
             <small>Please write complete meta tag</small>
         </div>
