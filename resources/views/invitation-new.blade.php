@@ -641,6 +641,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="calig, Arial, sans-serif" style="font-family: 'calig', Arial, sans-serif;">calig
                         </option>
                         <option value="BLOODY, sans-serif" style="font-family: 'BLOODY', sans-serif;">BLOODY</option>
+                        <option value="alsscrp, sans-serif" style="font-family: 'alsscrp', sans-serif;">alsscrp</option>
 
                         <option value="jandacelebrationscript, sans-serif" style="font-family: 'jandacelebrationscript', sans-serif;">Janda Celebration Script</option>
                         <option value="anydore, sans-serif" style="font-family: 'anydore', sans-serif;">Anydore</option>
