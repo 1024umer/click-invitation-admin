@@ -670,6 +670,8 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="VanityBoldNarrow, sans-serif" style="font-family: 'VanityBoldNarrow', sans-serif;">VanityBoldNarrow</option>
                         <option value="KugileDemo, sans-serif" style="font-family: 'KugileDemo', sans-serif;">KugileDemo</option>
                         <option value="Atheniademo, sans-serif" style="font-family: 'Atheniademo', sans-serif;">Atheniademo</option>
+                        <option value="MontserratLight, sans-serif" style="font-family: 'MontserratLight', sans-serif;">Montserrat Light</option>
+
                         
                         <option value="Evilof, sans-serif" style="font-family: 'Evilof', sans-serif;">Evilof</option>
                         <option value="Landliebe, sans-serif" style="font-family: 'Landliebe', sans-serif;">Landliebe
