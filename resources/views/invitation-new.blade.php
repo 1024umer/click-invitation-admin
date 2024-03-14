@@ -672,6 +672,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="Vonique92_D, sans-serif" style="font-family: 'Vonique92_D', sans-serif;">Vonique92_D</option>
                         <option value="VanityBoldNarrow, sans-serif" style="font-family: 'VanityBoldNarrow', sans-serif;">VanityBoldNarrow</option>
                         <option value="KugileDemo, sans-serif" style="font-family: 'KugileDemo', sans-serif;">KugileDemo</option>
+                        <option value="LovelyCoffee, sans-serif" style="font-family: 'LovelyCoffee', sans-serif;">lovely Coffe</option>
                         <option value="Atheniademo, sans-serif" style="font-family: 'Atheniademo', sans-serif;">Atheniademo</option>a
                        
                         
