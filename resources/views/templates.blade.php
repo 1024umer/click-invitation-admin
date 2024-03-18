@@ -64,9 +64,18 @@
                 <form method="post" action="{{ route('card-template-store') }}" id="adduser">
                     {{ csrf_field() }}
                     <div class="form-row">
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
                             <label for="name">Enter Name of the Template</label>
                             <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="type_id">Select Category</label>
+                            <select class="form-control" id="type_id" name="type_id" required>
+                                <option selected disabled>Choose Any Category</option>
+                                @foreach ($categories as $value)
+                                    <option value='{{ $value->id_eventtype }}'>{{ $value->title }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="modal-footer">

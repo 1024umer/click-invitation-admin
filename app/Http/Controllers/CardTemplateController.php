@@ -12,7 +12,8 @@ class CardTemplateController extends Controller
     public function index()
     {
         $templates = Template::get();
-        return view('templates')->with(compact('templates'));
+        $categories = DB::table('event_type')->get();
+        return view('templates')->with(compact('templates' ,'categories'));
     }
 
     public function create()
@@ -27,10 +28,12 @@ class CardTemplateController extends Controller
     }
     public function store(Request $request)
     {
+        // dd($request->type_id);
 
         $template = Template::create([
             'json' => $request->json_blob,
             'name' => $request->name ? $request->name : 'New Template',
+            'type_id' => $request->type_id,
         ]);
         if($template){
             return view('invitation-new')->with(compact('template'));
