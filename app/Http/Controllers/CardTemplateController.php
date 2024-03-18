@@ -6,14 +6,19 @@ use Illuminate\Http\Request;
 use App\Template;
 use Illuminate\Support\Facades\DB;
 use Intervention\Image\Facades\Image;
+
 class CardTemplateController extends Controller
 {
 
     public function index()
     {
-        $templates = Template::get();
+        // $templates = Template::get();
+        $templates = DB::table('templates')
+            ->select('templates.*', 'event_type.*')
+            ->join('event_type', 'templates.type_id', '=', 'event_type.id_eventtype')
+            ->get();
         $categories = DB::table('event_type')->get();
-        return view('templates')->with(compact('templates' ,'categories'));
+        return view('templates')->with(compact('templates', 'categories'));
     }
 
     public function create()
@@ -24,7 +29,7 @@ class CardTemplateController extends Controller
     {
         $stickers = DB::table('stickers')->get();
         $cards = DB::table('cards_upload')->get();
-        return ['stickers' => $stickers,'cards' =>$cards];
+        return ['stickers' => $stickers, 'cards' => $cards];
     }
     public function store(Request $request)
     {
@@ -35,30 +40,31 @@ class CardTemplateController extends Controller
             'name' => $request->name ? $request->name : 'New Template',
             'type_id' => $request->type_id,
         ]);
-        if($template){
+        if ($template) {
             return view('invitation-new')->with(compact('template'));
-        }else{
+        } else {
             return back()->with('error', 'Something went wrong!');
         }
     }
-    public function update(Request $request){
-        try{
+    public function update(Request $request)
+    {
+        try {
             $template = Template::find($request->template_id);
-    
+
             $base64Image = $request->data_url;
             $base64Image = str_replace('data:image/png;base64,', '', $base64Image);
             $decodedImage = base64_decode($base64Image);
-    
+
             $imagePath = public_path('storage/templates/' . $template->name . '.png');
             file_put_contents($imagePath, $decodedImage);
-    
+
             $template->update([
                 'json' => $request->json_blob,
-                'image' => $template->name.'.png',
+                'image' => $template->name . '.png',
             ]);
-    
+
             return redirect()->route('card-template-list');
-        } catch (\Exception $e){
+        } catch (\Exception $e) {
             return response(['status' => false, 'message' => $e->getMessage()]);
         }
     }
@@ -67,24 +73,26 @@ class CardTemplateController extends Controller
         $templete = Template::find($request->id)->delete();
         return response(['status' => true]);
     }
-    public function getCSRFToken(){
+    public function getCSRFToken()
+    {
         return csrf_token();
     }
-    public function allTemplates(){
+    public function allTemplates()
+    {
         $templates = Template::get();
-        if($templates->count() > 0){
+        if ($templates->count() > 0) {
             return response($templates);
-        }else{
-            return response(['message'=>'No Template Found']);
+        } else {
+            return response(['message' => 'No Template Found']);
         }
     }
-    public function viewTemplate(Request $request){
+    public function viewTemplate(Request $request)
+    {
         $template = Template::find($request->id);
-        if($template){
-            return response()->json(['image_url' => asset('storage/templates/'.$template->image)]);
+        if ($template) {
+            return response()->json(['image_url' => asset('storage/templates/' . $template->image)]);
         } else {
             return response()->json(['message' => 'No Template Found']);
         }
     }
-    
 }
