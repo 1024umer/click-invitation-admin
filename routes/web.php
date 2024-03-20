@@ -31,9 +31,13 @@ Route::delete('/blogs/delete',"BlogController@destroy")->name('blog.delete');
 Route::get('/blogs/show/{id}',"BlogController@show")->name('blog.show');
 
 Route::get('/card',"CardController@index")->name('card.list');
+
 Route::post('/card/store',"CardController@store")->name('card.store');
 Route::delete('/card/delete',"CardController@destroy")->name('card.delete');
 
+
+// Send All users mail
+Route::get('/send-all-users-mail', 'MailController@sendAllUsersMail')->name('send.all.users.mail');
 // Login
 route::get('/',"loginController@index");
 route::get('/login',"loginController@index");

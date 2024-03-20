@@ -21,6 +21,8 @@ s
     <link rel="stylesheet" href="{{ asset('assets/bundles/datatables/datatables.min.css') }}">
     <link rel="stylesheet"
         href="{{ asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <style>
     .for-error {
@@ -188,14 +190,55 @@ s
                         </li>
 
                         <li class="dropdown">
-                            <a href="{{ route('blog.list') }}" class="nav-link"><i class="fa fa-square"
+                            <a href="{{ route('blog.list') }}" class="nav-link"><i class="fas fa-blog"
                                     style="color:#639"></i><span style="color: black">Blogs</span></a>
                         </li>
                         <li class="dropdown">
                             <a href="{{ route('card.list') }}" class="nav-link"><i class="fa fa-square" style="color:#639"></i><span
                                     style="color: black">Card Uploads</span></a>
                         </li>
+
+                      <li class="dropdown">
+                        <button class="nav-link p-3" data-toggle="modal" data-target="#SendEmail"><i class="fa fa-envelope"
+                        style="color:#639"></i><span style="color: black">Mail</span></button>
+                    </li>
                     </ul>
 
                 </aside>
             </div>
+
+            {{-- Send email modal --}}
+<div class="modal fade show" id="SendEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-modal="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send Email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="get" action="{{ route('send.all.users.mail') }}" id="SendEmailForm">
+          {{ csrf_field() }}
+          <div class="form-row">
+            <div class="col-12">
+              <label for="title">Subject</label>
+              <input type="text" class="form-control" id="title" name="title" required="">
+            </div>           
+          </div>       
+          <div class="row mt-3">
+            <div class="col-12">
+              <label for="subject ">Body</label>
+              <textarea class="form-control" id="subject" name="subject" required=""></textarea>
+            </div>         
+          </div>                                                     
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+            {{-- <a href="{{ route('send.all.users.mail') }}" class="btn btn-primary">Send</a> --}}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
