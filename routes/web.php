@@ -31,7 +31,8 @@ Route::delete('/blogs/delete',"BlogController@destroy")->name('blog.delete');
 Route::get('/blogs/show/{id}',"BlogController@show")->name('blog.show');
 
 Route::get('/card',"CardController@index")->name('card.list');
-
+Route::post('/card/store',"CardController@store")->name('card.store');
+Route::delete('/card/delete',"CardController@destroy")->name('card.delete');
 
 // Login
 route::get('/',"loginController@index");
