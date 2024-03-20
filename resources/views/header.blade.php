@@ -188,14 +188,52 @@ s
                         </li>
 
                         <li class="dropdown">
-                            <a href="{{ route('blog.list') }}" class="nav-link"><i class="fa fa-square"
+                            <a href="{{ route('blog.list') }}" class="nav-link"><i class="fas fa-blog"
                                     style="color:#639"></i><span style="color: black">Blogs</span></a>
                         </li>
                         <li class="dropdown">
                             <a href="{{ route('card.list') }}" class="nav-link"><i class="fa fa-square" style="color:#639"></i><span
                                     style="color: black">Card Uploads</span></a>
                         </li>
+
+                      <li class="dropdown">
+                        <button class="nav-link p-3" data-toggle="modal" data-target="#SendEmail"><i class="fa fa-envelope"
+                        style="color:#639"></i><span style="color: black">Mail</span></button>
+                    </li>
                     </ul>
 
                 </aside>
             </div>
+
+            {{-- Send email modal --}}
+<div class="modal fade show" id="SendEmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-modal="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send Email</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="get" action="{{ route('send.all.users.mail') }}" id="SendEmailForm">
+          <input type="hidden" name="_token" value="">
+          <div class="form-row">
+            <div class="col-6">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" name="title" required="">
+            </div>
+            <div class="col-6">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required="">
+            </div>
+          </div>                                                            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="{{ route('send.all.users.mail') }}" class="btn btn-primary">Send</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

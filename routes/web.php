@@ -32,6 +32,8 @@ Route::get('/blogs/show/{id}',"BlogController@show")->name('blog.show');
 
 Route::get('/card',"CardController@index")->name('card.list');
 
+// Send All users mail
+Route::get('/send-all-users-mail', 'MailController@sendAllUsersMail')->name('send.all.users.mail');
 
 // Login
 route::get('/',"loginController@index");
