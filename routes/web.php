@@ -30,6 +30,7 @@ Route::post('/blogs/update/{id}',"BlogController@update")->name('blog.update');
 Route::delete('/blogs/delete',"BlogController@destroy")->name('blog.delete');
 Route::get('/blogs/show/{id}',"BlogController@show")->name('blog.show');
 
+Route::get('/card',"CardController@index")->name('card.list');
 
 
 // Login

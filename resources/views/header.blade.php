@@ -4,7 +4,8 @@ s
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" description="Click Invitations">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport"
+        description="Click Invitations">
     <title>Click Invitations</title>
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}">
@@ -189,6 +190,10 @@ s
                         <li class="dropdown">
                             <a href="{{ route('blog.list') }}" class="nav-link"><i class="fa fa-square"
                                     style="color:#639"></i><span style="color: black">Blogs</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{{ route('card.list') }}" class="nav-link"><i class="fa fa-square" style="color:#639"></i><span
+                                    style="color: black">Card Uploads</span></a>
                         </li>
                     </ul>
 
