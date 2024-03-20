@@ -57,7 +57,7 @@
         </div>
 
         <div class="form-group">
-            <label>Meta Tag</label>
+            <label>Meta Description</label>
             <input class="form-control" name="meta_tag" value="{{ isset($blog) ? $blog->meta_tag : '' }}">
             <small>Please write complete meta tag</small>
         </div>
@@ -68,7 +68,7 @@
         </div>
         <div class="form-group">
             <label> Is Popular?</label>
-            <input type="checkbox" name="is_popular" {{ isset($blog) && $blog->is_popular == 1 ? 'checked' : '' }}id="">
+            <input type="checkbox" name="is_popular" {{ isset($blog) && $blog->is_popular == 1 ? 'checked' : '' }} id="">
         </div>
         <div class="form-group">
             <label> Is Latest?</label>

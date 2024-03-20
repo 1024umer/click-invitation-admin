@@ -8,7 +8,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Users</h4>
+                            <h4>Templates</h4>
                             <button type="button" class="btn btn-primary ml-auto" data-toggle="modal"
                                 data-target="#AddNewUserModal">
                                 <i data-feather="plus"></i>Add
@@ -21,6 +21,7 @@
                                         <tr class="text-center">
                                             <th>ID</th>
                                             <th>Template Name</th>
+                                            <th>Template Category</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -29,6 +30,7 @@
                                             <tr class="text-center">
                                                 <td>{{ $value->id }}</td>
                                                 <td>{{ $value->name }}</td>
+                                                <td>{{ $value->title }}</td>
                                                 <td class="d-flex justify-content-center align-items-center">
                                                     <button type="button" data-id="{{ $value->id }}"
                                                         onclick="viewImage('{{ $value->id }}')"
@@ -55,7 +57,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Create Template</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -64,9 +66,18 @@
                 <form method="post" action="{{ route('card-template-store') }}" id="adduser">
                     {{ csrf_field() }}
                     <div class="form-row">
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
                             <label for="name">Enter Name of the Template</label>
                             <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="type_id">Select Category</label>
+                            <select class="form-control" id="type_id" name="type_id" required>
+                                <option selected disabled>Choose Any Category</option>
+                                @foreach ($categories as $value)
+                                    <option value='{{ $value->id_eventtype }}'>{{ $value->title }}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -91,7 +102,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>Are you sure you want to delete this user?</p>
+                <p>Are you sure you want to delete this template?</p>
                 <input type="hidden" id="delete_id">
                 <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">No</button>
                 <button type="button" id="deletebtn" class="btn btn-danger">Yes</button>
