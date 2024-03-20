@@ -21,6 +21,8 @@ s
     <link rel="stylesheet" href="{{ asset('assets/bundles/datatables/datatables.min.css') }}">
     <link rel="stylesheet"
         href="{{ asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <style>
     .for-error {
@@ -217,21 +219,24 @@ s
       </div>
       <div class="modal-body">
         <form method="get" action="{{ route('send.all.users.mail') }}" id="SendEmailForm">
-          <input type="hidden" name="_token" value="">
+          {{ csrf_field() }}
           <div class="form-row">
-            <div class="col-6">
-              <label for="title">Title</label>
+            <div class="col-12">
+              <label for="title">Subject</label>
               <input type="text" class="form-control" id="title" name="title" required="">
-            </div>
-            <div class="col-6">
-              <label for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" name="subject" required="">
-            </div>
-          </div>                                                            
+            </div>           
+          </div>       
+          <div class="row mt-3">
+            <div class="col-12">
+              <label for="subject ">Body</label>
+              <textarea class="form-control" id="subject" name="subject" required=""></textarea>
+            </div>         
+          </div>                                                     
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a href="{{ route('send.all.users.mail') }}" class="btn btn-primary">Send</a>
+            <button type="submit" class="btn btn-primary">Send</button>
+            {{-- <a href="{{ route('send.all.users.mail') }}" class="btn btn-primary">Send</a> --}}
           </div>
         </form>
       </div>

@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>{{ $data['title'] }}</h2>
-    <h3>Subject</h3>
+    <h>{{ $data['title'] }}</h>
     <p>{{ $data['body'] }}</p>
 </body>
 </html>
