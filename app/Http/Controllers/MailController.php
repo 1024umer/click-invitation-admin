@@ -18,8 +18,14 @@ class MailController extends Controller
         // $testing = "talharao997az@gmail.com";
         if ($subscriber) {
             foreach($subscriber as $user){
+            // Mail::send('mails.subscriber', ['data' => $data], function($message) use ($user) {
+            //     $message->to($user)
+            //             ->from('no-reply@clickinvitation.com', 'Click Invitation') 
+            //             ->subject('Click Invitation Mail');
+            // });
+
             Mail::send('mails.subscriber', ['data' => $data], function($message) use ($user) {
-                $message->to($user)
+                $message->to("hw13604@gmail.com")
                         ->from('no-reply@clickinvitation.com', 'Click Invitation') 
                         ->subject('Click Invitation Mail');
             });
