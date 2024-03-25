@@ -25,7 +25,7 @@ class CardController extends Controller
         }
         $requestData = $request->only(['id_eventtype', 'type']);
         $requestData['img'] = 'eventcards/' . $img->getClientOriginalName();
-        CardsUpload::create($requestData);
+        $cards = CardsUpload::create($requestData);
         return redirect()->route('card.list');
     }
     public function destroy(Request $request)
