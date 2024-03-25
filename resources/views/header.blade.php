@@ -221,7 +221,7 @@ s
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Send Email</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
+                                <span aria-hidden="true" id="cross">×</span>
                             </button>
                         </div>
                         <div class="modal-body">
@@ -253,15 +253,19 @@ s
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
                     $("#exampleModal #close").click(function() {
-                      console.log("this.responseText");
                         $("#exampleModal").css("display", "none");
                         $(".modal-backdrop").css("display", "none");
                     });
 
                     $("#showModal").click(function() {
-                      console.log("this.responseText");
                         $("#exampleModal").css("display", "block");
                         $(".modal-backdrop").css("display", "block");
                         $(".modal-backdrop .show").css("opacity", "0.5");
+                    });
+
+
+                    $("#exampleModal #cross").click(function() {
+                        $("#exampleModal").css("display", "none");
+                        $(".modal-backdrop").css("display", "none");
                     });
             </script>
