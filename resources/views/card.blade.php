@@ -61,7 +61,7 @@
          <div class="modal-content">
              <div class="modal-header">
                  <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="cross">
                      <span aria-hidden="true">&times;</span>
                  </button>
              </div>
@@ -91,7 +91,8 @@
                          </div>
                      </div>
                      <div class="modal-footer">
-                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                             id="close">Close</button>
                          <button type="submit" class="btn btn-primary">Save</button>
                      </div>
                  </form>
@@ -109,13 +110,13 @@
              <div class="modal-header">
                  <h5 class="modal-title" id="deleteModalLabel" style="color:black ">Delete User</h5>
                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
+                     <span aria-hidden="true" id="deletecross">&times;</span>
                  </button>
              </div>
              <div class="modal-body">
                  <p>Are you sure you want to delete this user?</p>
                  <input type="hidden" id="delete_id">
-                 <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal">No</button>
+                 <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" id="deleteclose">No</button>
                  <button type="button" id="deletebtn" class="btn btn-danger">Yes</button>
              </div>
          </div>
@@ -124,7 +125,7 @@
 
 
  @include('footer')
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script>
      $('#adduser').submit(function() {
          swal({
@@ -202,9 +203,28 @@
                  alert('Failed to delete user.');
              }
          });
+
+         //          function closeModal(){
+         //        $("#AddNewUserModal").css("display", "none");
+         //        $(".modal-backdrop").css("display", "none");
+
+         //    }
+
      });
  </script>
+ <script>
+      $document.ready(function() {
+        $("#AddNewUserModal #close").click(function() {
+              $("#AddNewUserModal").css("display", "none");
+              $(".modal-backdrop").css("display", "none");
+          });
 
+          $("#AddNewUserModal #cross").click(function() {
+              $("#AddNewUserModal").css("display", "none");
+              $(".modal-backdrop").css("display", "none");
+          });
+     });
+ </script>
  <style>
      button svg {
          height: 15px;
