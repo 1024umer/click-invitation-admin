@@ -203,7 +203,7 @@ s
 
                         <li class="dropdown">
                             <a class="nav-link" id="showModal"
-                            {{-- data-toggle="modal" data-target="#exampleModal" --}}
+                            {{-- data-toggle="modal" data-target="#sendEmailModal" --}}
                             ><i class="fa fa-envelope" style="color:#639"></i><span
                                     style="color: black">Mail</span></a>
                         </li>
@@ -214,12 +214,12 @@ s
             </div>
 
             {{-- Send email modal --}}
-            <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLabel" style="display: none;" aria-modal="true">
+            <div class="modal fade show" id="sendEmailModal" tabindex="-1" role="dialog"
+                aria-labelledby="sendEmailModalLabel" style="display: none;" aria-modal="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Send Email</h5>
+                            <h5 class="modal-title" id="sendEmailModalLabel">Send Email</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true" id="cross">×</span>
                             </button>
@@ -252,20 +252,20 @@ s
 
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-                    $("#exampleModal #close").click(function() {
-                        $("#exampleModal").css("display", "none");
+                    $("#sendEmailModal #close").click(function() {
+                        $("#sendEmailModal").css("display", "none");
                         $(".modal-backdrop").css("display", "none");
                     });
 
                     $("#showModal").click(function() {
-                        $("#exampleModal").css("display", "block");
+                        $("#sendEmailModal").css("display", "block");
                         $(".modal-backdrop").css("display", "block");
                         $(".modal-backdrop .show").css("opacity", "0.5");
                     });
 
 
-                    $("#exampleModal #cross").click(function() {
-                        $("#exampleModal").css("display", "none");
+                    $("#sendEmailModal #cross").click(function() {
+                        $("#sendEmailModal").css("display", "none");
                         $(".modal-backdrop").css("display", "none");
                     });
             </script>
