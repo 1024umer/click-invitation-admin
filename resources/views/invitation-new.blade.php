@@ -647,6 +647,8 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="GreatVibesRegular, sans-serif" style="font-family: 'GreatVibesRegular', sans-serif;">GreatVibes Regular</option>
                         <option value="Agraham, sans-serif" style="font-family: 'Agraham', sans-serif;">Agraham</option>
                         <option value="MettaDahlia, sans-serif" style="font-family: 'MettaDahlia', sans-serif;">MettaDahlia</option>
+                        <option value="Darleston, sans-serif" style="font-family: 'Darleston', sans-serif;">Darleston</option>
+                        <option value="MonsieurLaDoulaise-Regular, sans-serif" style="font-family: 'MonsieurLaDoulaise-Regular', sans-serif;">MonsieurLaDoulaise-Regular</option>
                         <option value="DistantStroke, sans-serif" style="font-family: 'DistantStroke', sans-serif;">Distant_Stroke</option>
                         {{-- <option value="Vonique, sans-serif" style="font-family: 'Vonique', sans-serif;">Vonique 92</option> --}}
                         <option value="Vanity-Light, sans-serif" style="font-family: 'Vanity-Light', sans-serif;">Vanity-Light</option>
