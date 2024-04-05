@@ -644,12 +644,15 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="alsscrp, sans-serif" style="font-family: 'alsscrp', sans-serif;">alsscrp</option>
                         <option value="Raleway-Thin, sans-serif" style="font-family: 'Raleway-Thin', sans-serif;">Raleway Regular</option>
                         <option value="Baskervville-Regular, sans-serif" style="font-family: 'Baskervville-Regular', sans-serif;">Baskervville-Regular</option>
+                        <option value="califr, sans-serif" style="font-family: 'califr', sans-serif;">Califr</option>
+                        <option value="califrragular, sans-serif" style="font-family: 'califrragular', sans-serif;">Califr Regular</option>
+                        <option value="MiltonOneBold, sans-serif" style="font-family: 'MiltonOneBold', sans-serif;">MiltonOneBold</option>
                         <option value="GreatVibesRegular, sans-serif" style="font-family: 'GreatVibesRegular', sans-serif;">GreatVibes Regular</option>
                         <option value="Agraham, sans-serif" style="font-family: 'Agraham', sans-serif;">Agraham</option>
                         <option value="MettaDahlia, sans-serif" style="font-family: 'MettaDahlia', sans-serif;">MettaDahlia</option>
                         <option value="Darleston" style="font-family: 'Darleston';">Darleston</option>
                         {{-- <option value="MonsieurLaDoulaise-Regular" style="font-family: 'MonsieurLaDoulaise-Regular';">MonsieurLaDoulaise-Regular</option> --}}
-                        <option value="GoogleMonsieurLaDoulaiseRegular" style="font-family: 'GoogleMonsieurLaDoulaiseRegular' , sans-serif;">
+                        <option value="GoogleMonsieurLaDoulaiseRegular" style="font-family:GoogleMonsieurLaDoulaiseRegular">
                             MonsieurLaDoulaise-Regular</option>
                         <option value="DistantStroke, sans-serif" style="font-family: 'DistantStroke', sans-serif;">Distant_Stroke</option>
                         {{-- <option value="Vonique, sans-serif" style="font-family: 'Vonique', sans-serif;">Vonique 92</option> --}}
