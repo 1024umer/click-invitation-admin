@@ -22,7 +22,6 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js
 https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
 " rel="stylesheet">
 <style>
-    
     .sidebaraddtext {
         overflow: scroll;
     }
@@ -634,56 +633,98 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                     <select id="font-selector2" class="fontSelector1">
                         <option value="arial" style="font-family: arial">Arial</option>
                         <option value="Cinzel, serif" style="font-family: 'Cinzel', serif">Cinzel</option>
-                        <option value="Sackers, sans-serif" style="font-family: 'Sackers', sans-serif">Sackers Gothic</option>
+                        <option value="Sackers, sans-serif" style="font-family: 'Sackers', sans-serif">Sackers Gothic
+                        </option>
                         <option value="Rama, sans-serif" style="font-family: 'Rama', sans-serif">Rama Gothic</option>
-                        <option value="CircularSpotify, sans-serif" style="font-family: 'CircularSpotify', sans-serif">CircularSpotify</option>
+                        <option value="CircularSpotify, sans-serif"
+                            style="font-family: 'CircularSpotify', sans-serif">CircularSpotify</option>
                         <option value="Anta, sans-serif" style="font-family: Anta;">Anta</option>
-                        <option value="calig, Arial, sans-serif" style="font-family: 'calig', Arial, sans-serif;">calig
+                        <option value="calig, Arial, sans-serif" style="font-family: 'calig', Arial, sans-serif;">
+                            calig
                         </option>
                         <option value="BLOODY, sans-serif" style="font-family: 'BLOODY', sans-serif;">BLOODY</option>
-                        <option value="alsscrp, sans-serif" style="font-family: 'alsscrp', sans-serif;">alsscrp</option>
-                        <option value="Raleway-Thin, sans-serif" style="font-family: 'Raleway-Thin', sans-serif;">Raleway Regular</option>
-                        <option value="Baskervville-Regular, sans-serif" style="font-family: 'Baskervville-Regular', sans-serif;">Baskervville-Regular</option>
+                        <option value="alsscrp, sans-serif" style="font-family: 'alsscrp', sans-serif;">alsscrp
+                        </option>
+                        <option value="Raleway-Thin, sans-serif" style="font-family: 'Raleway-Thin', sans-serif;">
+                            Raleway Regular</option>
+                        <option value="Baskervville-Regular, sans-serif"
+                            style="font-family: 'Baskervville-Regular', sans-serif;">Baskervville-Regular</option>
                         <option value="califr, sans-serif" style="font-family: 'califr', sans-serif;">Califr</option>
-                        <option value="califrragular, sans-serif" style="font-family: 'califrragular', sans-serif;">Califr Regular</option>
-                        <option value="MiltonOneBold, sans-serif" style="font-family: 'MiltonOneBold', sans-serif;">MiltonOneBold</option>
-                        <option value="GreatVibesRegular, sans-serif" style="font-family: 'GreatVibesRegular', sans-serif;">GreatVibes Regular</option>
-                        <option value="Agraham, sans-serif" style="font-family: 'Agraham', sans-serif;">Agraham</option>
-                        <option value="MettaDahlia, sans-serif" style="font-family: 'MettaDahlia', sans-serif;">MettaDahlia</option>
+                        <option value="califrragular, sans-serif" style="font-family: 'califrragular', sans-serif;">
+                            Califr Regular</option>
+                        <option value="MiltonOneBold, sans-serif" style="font-family: 'MiltonOneBold', sans-serif;">
+                            MiltonOneBold</option>
+                        <option value="GreatVibesRegular, sans-serif"
+                            style="font-family: 'GreatVibesRegular', sans-serif;">GreatVibes Regular</option>
+                        <option value="CinzelDecorativeBold, sans-serif"
+                            style="font-family: 'CinzelDecorativeBold', sans-serif;">Cinzel Decorative Bold</option>
+                        <option value="CinzelDecorativeRegular, sans-serif"
+                            style="font-family: 'CinzelDecorativeRegular', sans-serif;">Cinzel Decorative Regular
+                        </option>
+                        <option value="Agraham, sans-serif" style="font-family: 'Agraham', sans-serif;">Agraham
+                        </option>
+                        <option value="MettaDahlia, sans-serif" style="font-family: 'MettaDahlia', sans-serif;">
+                            MettaDahlia</option>
                         <option value="Darleston" style="font-family: 'Darleston';">Darleston</option>
                         {{-- <option value="MonsieurLaDoulaise-Regular" style="font-family: 'MonsieurLaDoulaise-Regular';">MonsieurLaDoulaise-Regular</option> --}}
-                        <option value="GoogleMonsieurLaDoulaiseRegular" style="font-family:GoogleMonsieurLaDoulaiseRegular">
+                        <option value="GoogleMonsieurLaDoulaiseRegular"
+                            style="font-family:GoogleMonsieurLaDoulaiseRegular">
                             MonsieurLaDoulaise-Regular</option>
-                        <option value="DistantStroke, sans-serif" style="font-family: 'DistantStroke', sans-serif;">Distant_Stroke</option>
+                        <option value="DistantStroke, sans-serif" style="font-family: 'DistantStroke', sans-serif;">
+                            Distant_Stroke</option>
                         {{-- <option value="Vonique, sans-serif" style="font-family: 'Vonique', sans-serif;">Vonique 92</option> --}}
-                        <option value="Vanity-Light, sans-serif" style="font-family: 'Vanity-Light', sans-serif;">Vanity-Light</option>
+                        <option value="Vanity-Light, sans-serif" style="font-family: 'Vanity-Light', sans-serif;">
+                            Vanity-Light</option>
                         <option value="Amoun, sans-serif" style="font-family: 'Amoun', sans-serif;">Amoun</option>
-                        <option value="Moon Flower, sans-serif" style="font-family: 'Moon Flower', sans-serif;">Moonflowers</option>
-                        <option value="ScarlettBusiat, sans-serif" style="font-family: 'ScarlettBusiat', sans-serif;">ScarlettBusiat</option>
-                        <option value="MontserratLight, sans-serif" style="font-family: 'MontserratLight', sans-serif;">Montserrat Light</option>
-                        <option value="BrockScript, sans-serif" style="font-family: 'BrockScript', sans-serif;">BrockScript</option>
-                        
+                        <option value="Moon Flower, sans-serif" style="font-family: 'Moon Flower', sans-serif;">
+                            Moonflowers</option>
+                        <option value="ScarlettBusiat, sans-serif" style="font-family: 'ScarlettBusiat', sans-serif;">
+                            ScarlettBusiat</option>
+                        <option value="MontserratLight, sans-serif"
+                            style="font-family: 'MontserratLight', sans-serif;">Montserrat Light</option>
+                        <option value="BrockScript, sans-serif" style="font-family: 'BrockScript', sans-serif;">
+                            BrockScript</option>
 
-                        <option value="jandacelebrationscript, sans-serif" style="font-family: 'jandacelebrationscript', sans-serif;">Janda Celebration Script</option>
-                        <option value="anydore, sans-serif" style="font-family: 'anydore', sans-serif;">Anydore</option>
-                        <option value="creattiondemo, sans-serif" style="font-family: 'creattiondemo', sans-serif;">Creattion Demo</option>
+
+                        <option value="jandacelebrationscript, sans-serif"
+                            style="font-family: 'jandacelebrationscript', sans-serif;">Janda Celebration Script
+                        </option>
+                        <option value="anydore, sans-serif" style="font-family: 'anydore', sans-serif;">Anydore
+                        </option>
+                        <option value="creattiondemo, sans-serif" style="font-family: 'creattiondemo', sans-serif;">
+                            Creattion Demo</option>
                         <option value="candy, sans-serif" style="font-family: 'candy', sans-serif;">Candy</option>
-                        <option value="weddingBells, sans-serif" style="font-family: 'weddingBells', sans-serif;">Wedding bells</option>
-                        <option value="Blacksword, sans-serif" style="font-family: 'Blacksword', sans-serif;">Blacksword</option>
-                        <option value="GabyDemo, sans-serif" style="font-family: 'GabyDemo', sans-serif;">Gaby Demo</option>
-                        <option value="arbuckle-fat, sans-serif" style="font-family: 'arbuckle-fat', sans-serif;">Arbuckle Fat</option>
-                        <option value="drSugiyamaRegular, sans-serif" style="font-family: 'drSugiyamaRegular', sans-serif;">Dr Sugiyama Regular</option>
-                        <option value="CasablancaNoirPersonalUse, sans-serif" style="font-family: 'CasablancaNoirPersonalUse', sans-serif;">Casablanca Noir Personal Use</option>
-                        <option value="RegistaItalic, sans-serif" style="font-family: 'RegistaItalic', sans-serif;">Regista Italic</option>
-                        <option value="CoalhandLueTRIAL, sans-serif" style="font-family: 'CoalhandLueTRIAL', sans-serif;">Coalhand Lue</option>
-                        <option value="MagentaRose, sans-serif" style="font-family: 'MagentaRose', sans-serif;">Magenta Rose</option>
-                        <option value="Vonique92_D, sans-serif" style="font-family: 'Vonique92_D', sans-serif;">Vonique92_D</option>
-                        <option value="VanityBoldNarrow, sans-serif" style="font-family: 'VanityBoldNarrow', sans-serif;">VanityBoldNarrow</option>
-                        <option value="KugileDemo, sans-serif" style="font-family: 'KugileDemo', sans-serif;">KugileDemo</option>
-                        <option value="LovelyCoffee, sans-serif" style="font-family: 'LovelyCoffee', sans-serif;">lovely Coffe</option>
-                        <option value="Atheniademo, sans-serif" style="font-family: 'Atheniademo', sans-serif;">Atheniademo</option>a
-                       
-                        
+                        <option value="weddingBells, sans-serif" style="font-family: 'weddingBells', sans-serif;">
+                            Wedding bells</option>
+                        <option value="Blacksword, sans-serif" style="font-family: 'Blacksword', sans-serif;">
+                            Blacksword</option>
+                        <option value="GabyDemo, sans-serif" style="font-family: 'GabyDemo', sans-serif;">Gaby Demo
+                        </option>
+                        <option value="arbuckle-fat, sans-serif" style="font-family: 'arbuckle-fat', sans-serif;">
+                            Arbuckle Fat</option>
+                        <option value="drSugiyamaRegular, sans-serif"
+                            style="font-family: 'drSugiyamaRegular', sans-serif;">Dr Sugiyama Regular</option>
+                        <option value="CasablancaNoirPersonalUse, sans-serif"
+                            style="font-family: 'CasablancaNoirPersonalUse', sans-serif;">Casablanca Noir Personal Use
+                        </option>
+                        <option value="RegistaItalic, sans-serif" style="font-family: 'RegistaItalic', sans-serif;">
+                            Regista Italic</option>
+                        <option value="CoalhandLueTRIAL, sans-serif"
+                            style="font-family: 'CoalhandLueTRIAL', sans-serif;">Coalhand Lue</option>
+                        <option value="MagentaRose, sans-serif" style="font-family: 'MagentaRose', sans-serif;">
+                            Magenta Rose</option>
+                        <option value="Vonique92_D, sans-serif" style="font-family: 'Vonique92_D', sans-serif;">
+                            Vonique92_D</option>
+                        <option value="VanityBoldNarrow, sans-serif"
+                            style="font-family: 'VanityBoldNarrow', sans-serif;">VanityBoldNarrow</option>
+                        <option value="KugileDemo, sans-serif" style="font-family: 'KugileDemo', sans-serif;">
+                            KugileDemo</option>
+                        <option value="LovelyCoffee, sans-serif" style="font-family: 'LovelyCoffee', sans-serif;">
+                            lovely Coffe</option>
+                        <option value="Atheniademo, sans-serif" style="font-family: 'Atheniademo', sans-serif;">
+                            Atheniademo</option>a
+
+
                         <option value="Evilof, sans-serif" style="font-family: 'Evilof', sans-serif;">Evilof</option>
                         <option value="Landliebe, sans-serif" style="font-family: 'Landliebe', sans-serif;">Landliebe
                         </option>
@@ -693,13 +734,16 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                             style="font-family: 'Headhunter-Regular', sans-serif;">Headhunter Regular</option>
                         <option value="victoria, sans-serif" style="font-family: 'victoria', sans-serif;">victoria
                         </option>
-                        <option value="Rock Salt, cursive" style="font-family: 'Rock Salt', cursive;">Rock Salt</option>
+                        <option value="Rock Salt, cursive" style="font-family: 'Rock Salt', cursive;">Rock Salt
+                        </option>
                         <option value="playball, cursive" style="font-family: 'Playball', cursive;">Playball</option>
                         <option value="Rammetto One, sans-serif" style="font-family: 'Rammetto One', sans-serif;">
                             Playball</option>
-                        <option value="Bungee Shade, sans-serif" style="font-family: 'Bungee Shade', sans-serif;">Bungee
+                        <option value="Bungee Shade, sans-serif" style="font-family: 'Bungee Shade', sans-serif;">
+                            Bungee
                             Shade</option>
-                        <option value="HenryMorganHand, sans-serif" style="font-family: 'HenryMorganHand', sans-serif;">
+                        <option value="HenryMorganHand, sans-serif"
+                            style="font-family: 'HenryMorganHand', sans-serif;">
                             Henry MorganHand</option>
                         <option value="romeo, sans-serif" style="font-family: 'romeo', sans-serif;">Romeo</option>
                         <option value="XTRAFLEX, sans-serif" style="font-family: 'XTRAFLEX', sans-serif;">XTRAFLEX
@@ -717,21 +761,27 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         <option value="OrotundCaps, sans-serif" style="font-family: 'OrotundCaps', sans-serif;">
                             OrotundCaps</option>
                         <option value="qurve, sans-serif" style="font-family: 'qurve', sans-serif;">qurve</option>
-                        <option value="dephun2, sans-serif" style="font-family: 'dephun2', sans-serif;">dephun2</option>
+                        <option value="dephun2, sans-serif" style="font-family: 'dephun2', sans-serif;">dephun2
+                        </option>
                         <option value="mysteron, sans-serif" style="font-family: 'mysteron', sans-serif;">mysteron
                         </option>
-                        <option value="LETSEAT, sans-serif" style="font-family: 'LETSEAT', sans-serif;">LETSEAT</option>
-                        <option value="energydimension, sans-serif" style="font-family: 'energydimension', sans-serif;">
+                        <option value="LETSEAT, sans-serif" style="font-family: 'LETSEAT', sans-serif;">LETSEAT
+                        </option>
+                        <option value="energydimension, sans-serif"
+                            style="font-family: 'energydimension', sans-serif;">
                             Energy Dimension</option>
                         <!-- <option value="Popups, sans-serif" style="font-family: 'Popups', sans-serif;">Popups</option> -->
-                        <option value="dipedthick, sans-serif" style="font-family: 'dipedthick', sans-serif;">dipedthick
+                        <option value="dipedthick, sans-serif" style="font-family: 'dipedthick', sans-serif;">
+                            dipedthick
                         </option>
 
-                        <option value="EB Garamond, serif" style="font-family: EB Garamond, serif">EB Garamond</option>
+                        <option value="EB Garamond, serif" style="font-family: EB Garamond, serif">EB Garamond
+                        </option>
                         <option value="Courier New, monospace" style="font-family: Courier New, monospace">Courier New
                         </option>
                         <option value="Lobster, sans-serif" style="font-family: Lobster;">Lobster</option>
-                        <option value="Lucida Console, monospace" style="font-family: Lucida Console, monospace">Lucida
+                        <option value="Lucida Console, monospace" style="font-family: Lucida Console, monospace">
+                            Lucida
                             Console</option>
                         <option value="Montserrat, sans-serif" style="font-family: Montserrat, sans-serif">Montserrat
                         </option>
