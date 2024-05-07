@@ -663,6 +663,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css
                         </option>
                         <option value="Agraham, sans-serif" style="font-family: 'Agraham', sans-serif;">Agraham
                         </option>
+                        <option value="GloriousCopperDEMO, sans-serif" style="font-family: 'GloriousCopperDEMO', sans-serif;">GloriousCopperDEMO</option>
                         <option value="MettaDahlia, sans-serif" style="font-family: 'MettaDahlia', sans-serif;">
                             MettaDahlia</option>
                         <option value="Darleston" style="font-family: 'Darleston';">Darleston</option>
