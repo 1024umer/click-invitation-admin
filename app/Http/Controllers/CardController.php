@@ -25,7 +25,7 @@ class CardController extends Controller
             $img->move(public_path('eventcards'), $img->getClientOriginalName());
         }
         $requestData = $request->only(['id_eventtype', 'type']);
-        $requestData['img'] = 'eventcards/' . $img->getClientOriginalName();
+        $requestData['img'] =  $img->getClientOriginalName();
         $cards = CardsUpload::create($requestData);
         return redirect()->route('card.list');
     }
