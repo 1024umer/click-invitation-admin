@@ -1444,7 +1444,7 @@ function loadCardImagesFromDB(data) {
 
     const img = document.createElement("img");
     img.src =
-      "https://clickadmin.searchmarketingservices.online/eventcards/" + data[i].img;
+      "https://clickadmin.searchmarketingservices.online/" + data[i].img;
     img.setAttribute("height", "200px");
     img.setAttribute("width", "200px");
     img.setAttribute("id", `img_${i}`);
